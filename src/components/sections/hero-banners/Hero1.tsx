@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-const Hero1 = () => {
+const Hero1: React.FC = () => {
   return (
     <section data-aos="fade-up">
       {/* banner section  */}

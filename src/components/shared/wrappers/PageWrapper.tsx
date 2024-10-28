@@ -1,7 +1,13 @@
 // import Footer from "@/components/layout/footer/Footer";
 // import Header from "@/components/layout/header/Header";
-import Scrollup from "../others/Scrollup.js";
-const PageWrapper = ({ children }) => {
+import React from 'react';
+import Scrollup from "../others/Scrollup";
+
+interface PageWrapperProps {
+  children: React.ReactNode;
+}
+
+const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
   return (
     <>
       {/* header */}
