@@ -25,14 +25,14 @@
 |
 	|___background
 	|
-	|___shdow
+	|___shadow
 |
-	|___postion
+	|___position
 |
 	|___transform
-| |___tranlate 
+| |___translate 
 	|
-	|___ border
+	|___border
 | |___width 
 | |___radius 
 	|
@@ -88,7 +88,7 @@ module.exports = {
         "blue-light2": "#e5eded",
         "blue-light1": "#e7f1ff",
         "blue-x-light": "#e9ecef",
-        "black-brerry-light": "rgba(114, 106, 137, 0.8)",
+        "black-berry-light": "rgba(114, 106, 137, 0.8)",
         bodyColor: "#222222",
         bodyBg: "#fbfbfb",
         bodyBg1: "#F7F7F7",
@@ -101,7 +101,7 @@ module.exports = {
         contentColor: "#5F6C76",
         contentColor2: "#5C727D",
         primaryColor: "#5F2DED",
-        secondaryColor: "#F2277E",
+        secondaryColor: "#fab824",
         secondaryColor2: "#FF275A",
         secondaryColor3: "#FF2828",
         blackColor: "#000000",
@@ -109,8 +109,8 @@ module.exports = {
         blackColor2: "#191B1E",
         darkblack: "#0C0E2B",
         darkcolor: "#263546",
-        darkgray: "#9FA2CE",
-        deepgray: "#202942",
+        darkgrey: "#9FA2CE",
+        deepgrey: "#202942",
         lightGrey: "#7B8696",
         lightGrey2: "#7B8697",
         lightGrey3: "#7E858B",
@@ -175,14 +175,14 @@ module.exports = {
         "whitegrey-dark": "#fff",
         "whitegrey1-dark": "#312a57",
         "whitegrey2-dark": "#312a57",
-        "deepgray-dark": "#fff",
+        "deepgrey-dark": "#fff",
         "borderColor2-dark": "#fff",
         "darkdeep3-dark": "#17093e",
         "contentColor2-dark": "#fff",
         "deepgreen-dark": "#fff",
         "bs-body-color-dark": "#fff",
         "fb-color": "#3b5999",
-        "twiter-color": "#55acee",
+        "twitter-color": "#55acee",
       },
       // area
       // width
@@ -542,7 +542,7 @@ module.exports = {
       backgroundImage: {
         register: "url('../assets/images/register/register__bg.png')",
       },
-      // shdow
+      // shadow
       boxShadow: {
         dropdown: "0 0 50px 10px rgba(15, 157, 193, 0.1)",
         "dropdown-secodary": "0 0 50px 10px rgba(95, 45, 237, 0.15)",
@@ -569,7 +569,7 @@ module.exports = {
         blog2: "0 0 50px 10px rgba(95, 45, 237, 0.05)",
         event: "0px 5px 20px rgba(94, 122, 193, 0.14)",
         review: "0px 10px 25px rgba(0, 0, 0, 0.07)",
-        autor: "5px 5px 20px 5px rgba(0, 0, 0, 0.03)",
+        author: "5px 5px 20px 5px rgba(0, 0, 0, 0.03)",
         accordion: "0 0 20px 10px rgba(95, 45, 237, 0.02)",
 
         accordion2: "0 0 10px 2px rgba(0, 0, 0, 0.05)",
@@ -579,7 +579,7 @@ module.exports = {
         address: "0px 4px 15px rgba(174, 181, 206, 0.09)",
         "address-hover": "0px 4px 25px rgba(174, 181, 206, 0.3)",
       },
-      // postion
+      // position
       zIndex: {
         "-1": "-1",
         1: "1",
@@ -593,7 +593,7 @@ module.exports = {
         xxxl: "1000000010",
       },
       // transform
-      // tranlate
+      // translate
       translate: {
         "5px": "5px",
         "50px": "3.125rem",
@@ -661,7 +661,7 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
-        buble: {
+        bubble: {
           "0%": {
             " -webkit-transform": "translate(-50%, -50%) scale(0.5)",
             transform: "translate(-50%, -50%) scale(0.5)",
@@ -720,13 +720,13 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin-slow 6s linear 0s infinite alternate",
-        "spin-infinit": "spin-slow 2s linear infinite",
-        "spin-infinit2": "spin-slow 5s linear infinite",
+        "spin-infinite": "spin-slow 2s linear infinite",
+        "spin-infinite2": "spin-slow 5s linear infinite",
         "move-hor": "move-hor 3s linear 0s infinite alternate",
         "move-var": "move-var 3s infinite linear",
         "move-var2": "move-var2 3s infinite linear",
-        buble: "buble 3.25s linear 0s infinite",
-        buble2: "buble 3.25s linear .75s infinite",
+        bubble: "bubble 3.25s linear 0s infinite",
+        bubble2: "bubble 3.25s linear .75s infinite",
         marquee: "marquee 25s linear 0s infinite normal",
         preloader: "preloader 1.5s linear 0s",
       },
