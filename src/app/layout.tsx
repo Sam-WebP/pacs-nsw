@@ -1,14 +1,14 @@
 import { Hind, Inter } from "next/font/google";
 import "./globals.css";
 
-
-export const inter = Inter({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
   variable: "--font-inter",
 });
-export const hind = Hind({
+
+const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${hind.variable}`}>
       <body>{children}</body>
     </html>
   )
