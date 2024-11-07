@@ -6,6 +6,7 @@ import HeroName from "@/components/shared/section-names/HeroName";
 import Image from "next/image";
 import React, { useEffect } from "react";
 import heroVideo from "@/assets/videos/hero_video.mp4";
+import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.png";
 import herobanner2 from "@/assets/images/register__2.png";
 import herobanner6 from "@/assets/images/herobanner__6.png";
 import herobanner7 from "@/assets/images/herobanner__7.png";
@@ -16,7 +17,7 @@ const Hero1: React.FC = () => {
     <section data-aos="fade-up">
       {/* banner section  */}
       <div className="container2-xl bg-darkdeep1 pt-50px md:pt-20 pb-60px rounded-2xl relative overflow-hidden shadow-brand">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 items-top">
           {/* banner Left  */}
           <div data-aos="fade-up">
             <HeroName>PACIFIC & AUSTRALIAN COMMUNITY SERVICES</HeroName>
@@ -44,13 +45,14 @@ const Hero1: React.FC = () => {
           </div>
           {/* banner right  */}
           <div data-aos="fade-up"> 
-            <div className="tilt relative">
+             <div className="tilt relative">
               <video
                 className="w-full"
                 autoPlay
                 loop
                 muted
                 playsInline
+                poster={heroVideoThumbnail.src}
               >
                 <source src={heroVideo} type="video/mp4" />
                 Your browser does not support the video tag.
