@@ -6,7 +6,7 @@ import HeroName from "@/components/shared/section-names/HeroName";
 import Image from "next/image";
 import React, { useEffect } from "react";
 import heroVideo from "@/assets/videos/hero_video.mp4";
-import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.png";
+import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.webp";
 import herobanner2 from "@/assets/images/register__2.png";
 import herobanner6 from "@/assets/images/herobanner__6.png";
 import herobanner7 from "@/assets/images/herobanner__7.png";
