@@ -6,7 +6,7 @@ interface ButtonPrimaryProps {
   children: React.ReactNode;
   color?: "primary" | "secondary";
   type?: "button" | "submit";
-  path?: string;
+  path: string;
   arrow?: boolean;
   width?: "full" | "auto";
   onClick?: () => void;
@@ -23,7 +23,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
 }) => {
   return type === "button" || type === "submit" ? (
     <button
-      {...{ type: type === "submit" ? "submit" : "" }}
+      type={type === "submit" ? "submit" : "button"}
       onClick={onClick ? onClick : () => {}}
       className={`text-size-15 text-whiteColor  px-25px py-10px border  hover:bg-whiteColor inline-block rounded dark:hover:bg-whiteColor-dark dark:hover:text-whiteColor ${
         width === "full" ? "w-full" : ""
