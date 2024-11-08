@@ -26,7 +26,7 @@ const Hero1: React.FC = () => {
               Community Supported
             </HeadingLg>
             <ParagraphHero color="white">
-              Creating Safe Spaces for Young People to Grow, Connect, and Succeed.
+              Creating safe spaces for young people to grow, connect, and succeed.
             </ParagraphHero>
             <div className="mt-30px md:mt-45px pb-25px md:pb-25px">
               <Link
