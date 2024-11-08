@@ -1,3 +1,6 @@
+import "@/assets/css/icofont.min.css";
+import "./globals.css";
+
 import { Hind, Inter } from "next/font/google";
 import "./globals.css";
 
