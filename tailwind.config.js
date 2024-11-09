@@ -683,12 +683,12 @@ module.exports = {
           },
         },
         marquee: {
-          "0%": {
-            transform: "translateX(0)",
-          },
-          "100%": {
-            transform: "translateX(-50%)",
-          },
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
         preloader: {
           "0%": {
@@ -727,7 +727,8 @@ module.exports = {
         "move-var2": "move-var2 3s infinite linear",
         bubble: "bubble 3.25s linear 0s infinite",
         bubble2: "bubble 3.25s linear .75s infinite",
-        marquee: "marquee 25s linear 0s infinite normal",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         preloader: "preloader 1.5s linear 0s",
       },
     },
