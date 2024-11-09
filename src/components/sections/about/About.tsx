@@ -1,110 +1,71 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-// import Image from "next/image";
+import Image from "next/image";
+import { StaticImageData } from "next/image";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/Marquee";
 import SectionName from "@/components/shared/section-names/SectionName";
 import AboutListItem from "@/components/shared/abouts/AboutListItem";
+import marquee1 from "@/assets/images/marquee_1.webp";
+import marquee2 from "@/assets/images/marquee_2.webp";
+import marquee3 from "@/assets/images/marquee_3.webp";
+import marquee4 from "@/assets/images/marquee_4.webp";
+import marquee5 from "@/assets/images/marquee_5.webp";
+import marquee6 from "@/assets/images/marquee_6.webp";
+import marquee7 from "@/assets/images/marquee_7.webp";
+import marquee8 from "@/assets/images/marquee_8.webp";
+import marquee9 from "@/assets/images/marquee_9.webp";
+import marquee10 from "@/assets/images/marquee_10.webp";
+import marquee11 from "@/assets/images/marquee_11.webp";
+import marquee12 from "@/assets/images/marquee_12.webp";
 
 interface AboutItem {
   id: number;
   title: string;
 }
 
-const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({
+
+const ImageCard = ({
   img,
-  name,
-  username,
-  body,
 }: {
-  img: string;
-  name: string;
-  username: string;
-  body: string;
+  img: StaticImageData;
 }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border p-4",
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+        "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border",
       )}
     >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
-        </div>
-      </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <Image 
+        className="object-cover" 
+        alt=""
+        src={img}
+      />
     </figure>
   );
 };
 
 const About: React.FC = () => {
+
+  const marqueeImages = [
+    { img: marquee1 },
+    { img: marquee2 },
+    { img: marquee3 },
+    { img: marquee4 },
+    { img: marquee5 },
+    { img: marquee6 },
+    { img: marquee7 },
+    { img: marquee8 },
+    { img: marquee9 },
+    { img: marquee10 },
+    { img: marquee11 },
+    { img: marquee12 }
+  ];
+  const firstRow = marqueeImages.slice(0, marqueeImages.length / 2);
+  const secondRow = marqueeImages.slice(marqueeImages.length / 2);
+
   const items: AboutItem[] = [
     { id: 1, title: "Weekly mentoring sessions, including Mentoring Night and Youth Leadership Mentoring" },
     { id: 2, title: "Opportunities to develop life skills, such as mental health awareness, conflict resolution, and career planning" },
@@ -116,9 +77,9 @@ const About: React.FC = () => {
     <section>
       <div className="container">
         {/* about section  */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px pt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px lg:pt-20 pt-25px">
           {/* about right */}
-          <div data-aos="fade-up" className="pl-0 lg:pl-35px order-1 lg:order-2">
+          <div data-aos="fade-up" className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px">
             <SectionName>OUR MISSION</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
               Helping Young People Realise Their {" "}
@@ -135,7 +96,7 @@ const About: React.FC = () => {
               ))}
             </ul>
 
-            <div className="mt-10">
+            <div className="mt-25px">
               <ButtonPrimary path="#" arrow={true}>
                 More About
               </ButtonPrimary>
@@ -145,21 +106,19 @@ const About: React.FC = () => {
           <div data-aos="fade-up" className="order-2 lg:order-1">
             <div className="relative flex h-[300px] lg:h-[700px] w-full flex-row items-center justify-center overflow-hidden rounded-lg">
               <Marquee pauseOnHover vertical className="[--duration:60s]">
-                {firstRow.map((review) => (
-                  <ReviewCard key={review.username} {...review} />
+                {firstRow.map((pic, index) => (
+                  <ImageCard key={`first-${index}`} {...pic} />
                 ))}
               </Marquee>
               <Marquee reverse pauseOnHover vertical className="[--duration:60s]">
-                {secondRow.map((review) => (
-                  <ReviewCard key={review.username} {...review} />
+                {secondRow.map((pic, index) => (
+                  <ImageCard key={`second-${index}`} {...pic} />
                 ))}
               </Marquee>
               <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white dark:from-background"></div>
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white dark:from-background"></div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
