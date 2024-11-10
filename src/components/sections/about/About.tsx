@@ -24,31 +24,19 @@ interface AboutItem {
   title: string;
 }
 
-
-
-
-const ImageCard = ({
-  img,
-}: {
-  img: StaticImageData;
-}) => {
+const ImageCard = ({ img }: { img: StaticImageData }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border",
+        "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border"
       )}
     >
-      <Image 
-        className="object-cover" 
-        alt=""
-        src={img}
-      />
+      <Image className="object-cover" alt="" src={img} />
     </figure>
   );
 };
 
 const About: React.FC = () => {
-
   const marqueeImages = [
     { img: marquee1 },
     { img: marquee2 },
@@ -61,17 +49,37 @@ const About: React.FC = () => {
     { img: marquee9 },
     { img: marquee10 },
     { img: marquee11 },
-    { img: marquee12 }
+    { img: marquee12 },
   ];
   const firstRow = marqueeImages.slice(0, marqueeImages.length / 2);
   const secondRow = marqueeImages.slice(marqueeImages.length / 2);
 
   const items: AboutItem[] = [
-    { id: 1, title: "Weekly mentoring sessions, including Mentoring Night and Youth Leadership Mentoring" },
-    { id: 2, title: "Opportunities to develop life skills, such as mental health awareness, conflict resolution, and career planning" },
-    { id: 3, title: "Collaboration with community leaders, including current and former NRL players and members of parliament" },
-    { id: 4, title: "A network of supportive sponsors and partners, ensuring our programs are impactful and sustainable" },
-    { id: 5, title: "A safe space for young people to share their experiences and find support." },
+    {
+      id: 1,
+      title:
+        "Weekly mentoring sessions, including Mentoring Night and Youth Leadership Mentoring",
+    },
+    {
+      id: 2,
+      title:
+        "Opportunities to develop life skills, such as mental health awareness, conflict resolution, and career planning",
+    },
+    {
+      id: 3,
+      title:
+        "Collaboration with community leaders, including current and former NRL players and members of parliament",
+    },
+    {
+      id: 4,
+      title:
+        "A network of supportive sponsors and partners, ensuring our programs are impactful and sustainable",
+    },
+    {
+      id: 5,
+      title:
+        "A safe space for young people to share their experiences and find support.",
+    },
   ];
   return (
     <section>
@@ -79,16 +87,24 @@ const About: React.FC = () => {
         {/* about section  */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px lg:pt-20 pt-25px">
           {/* about right */}
-          <div data-aos="fade-up" className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px">
+          <div
+            data-aos="fade-up"
+            className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px"
+          >
             <SectionName>OUR MISSION</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-              Helping Young People Realise Their {" "}
+              Helping Young People Realise Their{" "}
               <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-              Potential
+                Potential
               </span>{" "}
             </h3>
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-6 pl-3 border-l-2 border-primaryColor">
-            PACS NSW is a not-for-profit organisation dedicated to empowering young people through mentorship, guidance, and support. We focus on creating a safe and inclusive space for youth to express themselves, build skills, and forge a brighter future. Our programs are designed to address real-life challenges while fostering personal growth and community connections.
+              PACS NSW is a not-for-profit organisation dedicated to empowering
+              young people through mentorship, guidance, and support. We focus
+              on creating a safe and inclusive space for youth to express
+              themselves, build skills, and forge a brighter future. Our
+              programs are designed to address real-life challenges while
+              fostering personal growth and community connections.
             </p>
             <ul className="space-y-5">
               {items.map((item, idx) => (
@@ -110,7 +126,12 @@ const About: React.FC = () => {
                   <ImageCard key={`first-${index}`} {...pic} />
                 ))}
               </Marquee>
-              <Marquee reverse pauseOnHover vertical className="[--duration:60s]">
+              <Marquee
+                reverse
+                pauseOnHover
+                vertical
+                className="[--duration:60s]"
+              >
                 {secondRow.map((pic, index) => (
                   <ImageCard key={`second-${index}`} {...pic} />
                 ))}

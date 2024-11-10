@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 interface HeadingLgProps {
   children: React.ReactNode;
-  color?: 'white' | 'default';
+  color?: "white" | "default";
 }
 
 const HeadingLg: React.FC<HeadingLgProps> = ({ children, color }) => {

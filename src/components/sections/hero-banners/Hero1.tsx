@@ -21,18 +21,18 @@ const Hero1: React.FC = () => {
           <div data-aos="fade-up">
             <HeroName>PACIFIC & AUSTRALIAN COMMUNITY SERVICES</HeroName>
             <HeadingLg color="white">
-              Individual Focused & 
-              Community Supported
+              Individual Focused & Community Supported
             </HeadingLg>
             <ParagraphHero color="white">
-              Creating safe spaces for young people to grow, connect, and succeed.
+              Creating safe spaces for young people to grow, connect, and
+              succeed.
             </ParagraphHero>
             <div className="mt-30px md:mt-45px pb-25px md:pb-25px">
               <Link
                 href="/courses"
                 className="text-sm md:text-size-15 font-semibold text-darkdeep2 bg-secondaryColor border border-whiteColor px-5 md:px-30px py-3 md:py-4 hover:text-whiteColor hover:bg-darkblack rounded inline-block mr-6px md:mr-30px shadow-hero-action dark:bg-whiteColor-dark dark:hover:bg-whiteColor dark:text-whiteColor dark:hover:text-whiteColor-dark dark:border-none"
               >
-                      Get Involved
+                Get Involved
               </Link>
               <Link
                 href="/courses"
@@ -43,8 +43,8 @@ const Hero1: React.FC = () => {
             </div>
           </div>
           {/* banner right  */}
-          <div data-aos="fade-up"> 
-             <div className="tilt relative">
+          <div data-aos="fade-up">
+            <div className="tilt relative">
               <video
                 className="w-full"
                 autoPlay
@@ -74,7 +74,7 @@ const Hero1: React.FC = () => {
             className="absolute top-[5%] left-[45%]"
             src={herobanner7}
             alt=""
-          /> 
+          />
         </div>
       </div>
     </section>

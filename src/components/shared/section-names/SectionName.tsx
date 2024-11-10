@@ -1,7 +1,7 @@
 import React from "react";
 
 interface SectionNameProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const SectionName: React.FC<SectionNameProps> = ({ children }) => {
