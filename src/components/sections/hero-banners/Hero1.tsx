@@ -8,7 +8,6 @@ import React, { useEffect } from "react";
 import heroVideo from "@/assets/videos/hero_video.mp4";
 import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.webp";
 import herobanner2 from "@/assets/images/register__2.png";
-import herobanner6 from "@/assets/images/herobanner__6.png";
 import herobanner7 from "@/assets/images/herobanner__7.png";
 import Link from "next/link";
 
@@ -33,7 +32,7 @@ const Hero1: React.FC = () => {
                 href="/courses"
                 className="text-sm md:text-size-15 font-semibold text-darkdeep2 bg-secondaryColor border border-whiteColor px-5 md:px-30px py-3 md:py-4 hover:text-whiteColor hover:bg-darkblack rounded inline-block mr-6px md:mr-30px shadow-hero-action dark:bg-whiteColor-dark dark:hover:bg-whiteColor dark:text-whiteColor dark:hover:text-whiteColor-dark dark:border-none"
               >
-                Get Involved
+                      Get Involved
               </Link>
               <Link
                 href="/courses"
@@ -64,11 +63,6 @@ const Hero1: React.FC = () => {
           <Image
             className="absolute left-1/2 bottom-[15%] animate-spin-slow"
             src={herobanner2}
-            alt=""
-          />
-          <Image
-            className="absolute left-[42%] sm:left-[65%] md:left-[42%] lg:left-[5%] top-[4%] sm:top-[1%] md:top-[4%] lg:top-[10%] animate-move-hor"
-            src={herobanner6}
             alt=""
           />
           <Image
