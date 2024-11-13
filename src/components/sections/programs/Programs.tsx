@@ -14,8 +14,8 @@ const Programs: React.FC = () => {
             Weekly Programs to{" "}
             <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
               Inspire
-            </span>
-            {" "}Our Youth
+            </span>{" "}
+            Our Youth
           </h3>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
@@ -37,7 +37,7 @@ const Programs: React.FC = () => {
             details={{
               date: "Every Wednesday",
               time: "6:00 PM - 7:30 PM",
-              location: "Whitlam Leisure Centre, 90 Memorial Ave, Liverpool"
+              location: "Whitlam Leisure Centre, 90 Memorial Ave, Liverpool",
             }}
             buttonText="Sign Up"
           />
