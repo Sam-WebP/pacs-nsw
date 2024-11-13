@@ -6,7 +6,7 @@ import MentoringNight from "@/assets/images/mentoring-night.png";
 
 const Programs: React.FC = () => {
   return (
-    <section className="pb-10 lg:pb-20">
+    <section>
       <div className="container">
         <div className="max-w-[800px]">
           <SectionName>PROGRAMS & SERVICES</SectionName>

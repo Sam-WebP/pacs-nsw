@@ -5,11 +5,17 @@ import React from "react";
 
 const Homepage: React.FC = () => {
   return (
-    <>
-      <Hero1 />
-      <About />
-      <Programs />
-    </>
+    <main className="flex flex-col space-y-22">
+      <div className="pt-8">
+        <Hero1 />
+      </div>
+      <div>
+        <About />
+      </div>
+      <div>
+        <Programs />
+      </div>
+    </main>
   );
 };
 

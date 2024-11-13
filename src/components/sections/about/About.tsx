@@ -85,11 +85,11 @@ const About: React.FC = () => {
     <section>
       <div className="container">
         {/* about section  */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px lg:pt-20 pt-25px">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px">
           {/* about right */}
           <div
             data-aos="fade-up"
-            className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px"
+            className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px md:-pb-0"
           >
             <SectionName>OUR MISSION</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">

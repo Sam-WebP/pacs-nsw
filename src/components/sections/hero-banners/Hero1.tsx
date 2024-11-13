@@ -15,7 +15,7 @@ const Hero1: React.FC = () => {
   return (
     <section data-aos="fade-up">
       {/* banner section  */}
-      <div className="container2-xl bg-darkdeep1 pt-50px md:pt-20 pb-60px rounded-2xl relative overflow-hidden shadow-brand">
+      <div className="container2-xl bg-darkdeep1 pt-50px md:pt-20 pb-50px rounded-2xl relative overflow-hidden shadow-brand">
         <div className="container grid grid-cols-1 lg:grid-cols-2 items-top">
           {/* banner Left  */}
           <div data-aos="fade-up">
