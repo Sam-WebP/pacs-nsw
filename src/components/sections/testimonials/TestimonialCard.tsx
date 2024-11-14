@@ -17,7 +17,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
       <div className="flex items-center gap-4">
-      <Image
+        <Image
           alt={name}
           src={image}
           className="size-14 rounded-full object-cover"
@@ -43,7 +43,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           </p>
         </div>
       </div>
-      <p className="mt-4 text-contentColor dark:text-contentColor-dark">{text}</p>
+      <p className="mt-4 text-contentColor dark:text-contentColor-dark">
+        {text}
+      </p>
     </blockquote>
   );
 };
