@@ -24,7 +24,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   buttonText,
 }) => {
   return (
-    <div className="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 border border-primaryColor/20">
+    <div className="mb-10 overflow-hidden rounded-lg bg-gray-50 p-6 shadow-sm">
       {" "}
       {/* Added border style */}
       <div className="relative h-[240px] w-full">
