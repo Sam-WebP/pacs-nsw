@@ -7,7 +7,7 @@ import React from "react";
 const Homepage: React.FC = () => {
   return (
     <main className="flex flex-col space-y-22">
-      <div className="pt-8">
+      <div>
         <Hero1 />
       </div>
       <div>
