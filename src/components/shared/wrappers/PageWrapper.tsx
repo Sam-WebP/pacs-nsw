@@ -1,4 +1,4 @@
-// import Footer from "@/components/layout/footer/Footer";
+import Footer from "@/components/layout/footer/Footer";
 import Navbar from "@/components/layout/header/Navbar";
 import React from "react";
 import Scrollup from "../others/Scrollup";
@@ -17,7 +17,7 @@ const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
       {children}
 
       {/* footer */}
-      {/* <Footer /> */}
+      <Footer />
 
       {/* scroll up */}
       <Scrollup />
