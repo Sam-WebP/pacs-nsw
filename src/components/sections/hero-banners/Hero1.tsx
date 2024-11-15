@@ -7,8 +7,8 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import heroVideo from "@/assets/videos/hero_video.mp4";
 import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.webp";
-import herobanner2 from "@/assets/images/register__2.png";
-import herobanner7 from "@/assets/images/herobanner__7.png";
+import herobanner2 from "@/assets/images/register__2.webp";
+import herobanner7 from "@/assets/images/herobanner__7.webp";
 import Link from "next/link";
 
 const Hero1: React.FC = () => {

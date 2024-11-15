@@ -540,7 +540,7 @@ module.exports = {
       },
       // background
       backgroundImage: {
-        register: "url('../assets/images/register/register__bg.png')",
+        register: "url('../assets/images/register/register__bg.webp')",
       },
       // shadow
       boxShadow: {

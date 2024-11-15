@@ -1,8 +1,8 @@
 import React from "react";
 import SectionName from "@/components/shared/section-names/SectionName";
 import ProgramCard from "./ProgramCard";
-import YouthLeadership from "@/assets/images/youth-leadership.png";
-import MentoringNight from "@/assets/images/mentoring-night.png";
+import YouthLeadership from "@/assets/images/youth-leadership.webp";
+import MentoringNight from "@/assets/images/mentoring-night.webp";
 
 const Programs: React.FC = () => {
   return (
