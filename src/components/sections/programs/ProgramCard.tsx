@@ -1,6 +1,5 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-// import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 interface ProgramDetails {
