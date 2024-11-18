@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
+// import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
+import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 interface ProgramDetails {
   date: string;
@@ -49,9 +50,11 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           </p>
         </div>
         <div className="mt-25px">
-          <ButtonPrimary path="#" arrow={true}>
-            {buttonText}
-          </ButtonPrimary>
+          <ShimmerButton className="shadow-2xl">
+            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+              Sign Up
+            </span>
+          </ShimmerButton>
         </div>
       </div>
     </div>

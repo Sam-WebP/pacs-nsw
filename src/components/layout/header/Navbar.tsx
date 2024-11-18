@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/images/pacs_logo.webp";
+import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,11 +51,12 @@ const Navbar: React.FC = () => {
           </Link>
 
           <div className="flex md:order-2">
-            <Link
-              href="/contact"
-              className="hidden md:block text-white bg-primaryColor hover:bg-secondaryColor hover:text-primaryColor focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-lg px-6 py-3 text-center transition-all duration-300"
-            >
-              Contact
+            <Link href="/contact">
+              <ShimmerButton className="shadow-2xl">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Contact
+                </span>
+              </ShimmerButton>
             </Link>
             <button
               onClick={toggleMenu}

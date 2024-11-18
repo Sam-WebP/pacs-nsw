@@ -10,6 +10,7 @@ import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.webp";
 import herobanner2 from "@/assets/images/register__2.webp";
 import herobanner7 from "@/assets/images/herobanner__7.webp";
 import Link from "next/link";
+import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 const Hero1: React.FC = () => {
   return (
@@ -28,11 +29,16 @@ const Hero1: React.FC = () => {
               succeed.
             </ParagraphHero>
             <div className="mt-30px md:mt-45px pb-25px md:pb-25px">
-              <Link
-                href="/courses"
-                className="text-sm md:text-size-15 font-semibold text-darkdeep2 bg-secondaryColor border border-whiteColor px-5 md:px-30px py-3 md:py-4 hover:text-whiteColor hover:bg-darkblack rounded inline-block mr-6px md:mr-30px shadow-hero-action dark:bg-whiteColor-dark dark:hover:bg-whiteColor dark:text-whiteColor dark:hover:text-whiteColor-dark dark:border-none"
-              >
-                Get Involved
+              <Link href="/courses">
+                <ShimmerButton
+                  className="mr-6px md:mr-30px shadow-hero-action"
+                  shimmerColor="#ffffff"
+                  background="var(--secondaryColor, #FE7200)"
+                >
+                  <span className="text-sm md:text-size-15 font-semibold text-darkdeep2 dark:text-darkdeep2">
+                    Get Involved
+                  </span>
+                </ShimmerButton>
               </Link>
               <Link
                 href="/courses"

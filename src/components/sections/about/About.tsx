@@ -18,6 +18,7 @@ import marquee9 from "@/assets/images/marquee_9.webp";
 import marquee10 from "@/assets/images/marquee_10.webp";
 import marquee11 from "@/assets/images/marquee_11.webp";
 import marquee12 from "@/assets/images/marquee_12.webp";
+import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 interface AboutItem {
   id: number;
@@ -113,9 +114,11 @@ const About: React.FC = () => {
             </ul>
 
             <div className="mt-25px">
-              <ButtonPrimary path="#" arrow={true}>
-                More About
-              </ButtonPrimary>
+              <ShimmerButton className="shadow-2xl">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  More About
+                </span>
+              </ShimmerButton>
             </div>
           </div>
           {/* about left */}
