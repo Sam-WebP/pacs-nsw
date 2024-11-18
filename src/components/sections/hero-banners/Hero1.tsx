@@ -29,7 +29,7 @@ const Hero1: React.FC = () => {
               succeed.
             </ParagraphHero>
             <div className="mt-30px md:mt-45px pb-25px md:pb-25px">
-              <Link href="/courses">
+              <Link href="/contact">
                 <ShimmerButton
                   className="mr-6px md:mr-30px shadow-hero-action"
                   shimmerColor="#ffffff"
