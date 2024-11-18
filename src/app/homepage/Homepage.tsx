@@ -7,7 +7,7 @@ import React from "react";
 
 const Homepage: React.FC = () => {
   return (
-    <main className="flex flex-col space-y-22">
+    <main className="flex flex-col space-y-12 md:space-y-16 lg:space-y-22">
       <div>
         <Hero1 />
       </div>
