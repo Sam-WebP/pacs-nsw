@@ -44,6 +44,10 @@
 
 ***************************************************************/
 
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -578,6 +582,7 @@ module.exports = {
         select: "0 0 0 .25rem rgba(13,110,253,.25)",
         address: "0px 4px 15px rgba(174, 181, 206, 0.09)",
         "address-hover": "0px 4px 25px rgba(174, 181, 206, 0.3)",
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },
       // position
       zIndex: {
@@ -661,6 +666,25 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+        "shimmer-slide": {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
         bubble: {
           "0%": {
             " -webkit-transform": "translate(-50%, -50%) scale(0.5)",
@@ -725,6 +749,9 @@ module.exports = {
         "move-hor": "move-hor 3s linear 0s infinite alternate",
         "move-var": "move-var 3s infinite linear",
         "move-var2": "move-var2 3s infinite linear",
+        "shimmer-slide":
+          "shimmer-slide var(--speed) ease-in-out infinite alternate",
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         bubble: "bubble 3.25s linear 0s infinite",
         bubble2: "bubble 3.25s linear .75s infinite",
         marquee: "marquee var(--duration) linear infinite",
@@ -739,6 +766,15 @@ module.exports = {
   },
 
   plugins: [
+    function addVariablesForColors({ addBase, theme }) {
+      let allColors = flattenColorPalette(theme("colors"));
+      let newVars = Object.fromEntries(
+        Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+      );
+      addBase({
+        ":root": newVars,
+      });
+    },
     // containers
     function ({ addComponents }) {
       addComponents({

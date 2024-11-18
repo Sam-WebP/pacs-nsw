@@ -2,6 +2,7 @@ import Hero1 from "@/components/sections/hero-banners/Hero1";
 import About from "@/components/sections/about/About";
 import Programs from "@/components/sections/programs/Programs";
 import Testimonials from "@/components/sections/testimonials/Testimonials";
+import Contact from "@/components/sections/contact/Contact";
 import React from "react";
 
 const Homepage: React.FC = () => {
@@ -18,6 +19,9 @@ const Homepage: React.FC = () => {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <Contact />
       </div>
     </main>
   );
