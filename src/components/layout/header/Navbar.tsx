@@ -26,10 +26,15 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Programs", path: "/programs" },
+    { name: "About", path: "/about" },
+  ];
+
   return (
     <>
       <div className="h-[88px]"></div>
-
       <nav
         className={`fixed w-full z-20 top-0 start-0 transition-all duration-300 ${
           isScrolled ? "bg-white/80 backdrop-blur-md" : "bg-transparent"
@@ -91,15 +96,12 @@ const Navbar: React.FC = () => {
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-              {[
-                { name: "Home", path: "/" },
-                { name: "Programs", path: "/programs" },
-                { name: "About", path: "/about" },
-              ].map((item) => (
+              {navItems.map((item) => (
                 <li key={item.name} className="w-full md:w-auto">
                   <Link
                     href={item.path}
                     className="block text-lg py-3 px-4 rounded-lg hover:text-primaryColor transition-all duration-300 w-full md:w-auto text-center"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -109,6 +111,7 @@ const Navbar: React.FC = () => {
                 <Link
                   href="/contact"
                   className="block text-lg py-3 px-4 rounded-lg hover:text-primaryColor transition-all duration-300 w-full text-center"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
                 </Link>
