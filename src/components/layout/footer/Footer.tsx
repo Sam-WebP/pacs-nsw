@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface NavigationItem {
@@ -11,10 +12,10 @@ const navigation: {
   social: NavigationItem[];
 } = {
   main: [
-    { name: "Home", href: "#" },
-    { name: "Programs", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Programs", href: "/programs" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ],
   social: [
     {
@@ -58,12 +59,12 @@ const Footer: React.FC = () => {
         <nav className="flex flex-wrap justify-center">
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a
+              <Link
                 href={item.href}
                 className="text-sm text-gray-600 hover:text-gray-800 dark:text-gray-100"
               >
                 {item.name}
-              </a>
+              </Link>
             </div>
           ))}
         </nav>
@@ -73,6 +74,8 @@ const Footer: React.FC = () => {
               key={item.name}
               href={item.href}
               className="text-gray-600 hover:text-gray-800 dark:text-gray-100"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="sr-only">{item.name}</span>
               {item.icon && (
