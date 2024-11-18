@@ -1,5 +1,6 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import Image from "next/image";
+import Link from "next/link";
 import { StaticImageData } from "next/image";
 import React from "react";
 import { cn } from "@/lib/utils";
@@ -114,11 +115,13 @@ const About: React.FC = () => {
             </ul>
 
             <div className="mt-25px">
-              <ShimmerButton className="shadow-2xl">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  More About
-                </span>
-              </ShimmerButton>
+              <Link href="/about">
+                <ShimmerButton className="shadow-2xl">
+                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                    More About
+                  </span>
+                </ShimmerButton>
+              </Link>
             </div>
           </div>
           {/* about left */}

@@ -41,7 +41,7 @@ const Hero1: React.FC = () => {
                 </ShimmerButton>
               </Link>
               <Link
-                href="/courses"
+                href="/about"
                 className="text-sm md:text-size-15 font-semibold text-whiteColor py-3 md:py-4 hover:text-secondaryColor inline-block"
               >
                 Find out more <i className="icofont-long-arrow-right"></i>
