@@ -1,4 +1,5 @@
-> [!NOTE] > **Update:** currently stakeholder feedback and information on the following:
+> [!NOTE]
+> **Update:** currently stakeholder feedback and information on the following:
 >
 > - Confirmation on registration requirements for mentoring programs.
 > - Decision on integrated registration form vs. linking to existing form.
