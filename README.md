@@ -1,3 +1,13 @@
+> [!NOTE] > **Update:** currently stakeholder feedback and information on the following:
+>
+> - Confirmation on registration requirements for mentoring programs.
+> - Decision on integrated registration form vs. linking to existing form.
+> - Confirmation on inclusion of "Collaborations & Guests" and "Sponsors" sections.
+> - Higher resolution PACS logo.
+> - Target email address for contact form submissions.
+> - Detailed content for "About" and "Programs" pages.
+> - Any additional sections/pages.
+
 # PACS Youth Mentoring Website
 
 ## Overview
