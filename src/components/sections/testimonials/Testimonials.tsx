@@ -12,33 +12,24 @@ const Testimonials: React.FC = () => {
         <div className="max-w-[800px]">
           <SectionName>TESTIMONIALS</SectionName>
           <h3 className="text-left text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-            Real{" "}
+            From Our{" "}
             <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-              Experiences
+              Pasifika
             </span>{" "}
-            , Real{" "}
-            <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-              Connections
-            </span>
+            Youth
           </h3>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           <TestimonialCard
-            name="JP"
-            image={JPProfilePicture}
-            text="I love going to PACS mentoring nights because it makes me feel loved and safe. It lets me know that whatever I’m going through, I can speak up about it and know that the boys in the group have my back."
-            rating={5}
-          />
-          <TestimonialCard
-            name="Harlem"
-            image={HarlemProfilePicture}
-            text="We get to learn from other people’s experiences, their lives, and their backstories. I’ve learned how to build boundaries and when to say no to things that aren't in my best interest."
-            rating={5}
-          />
-          <TestimonialCard
             name="Samu"
             image={SamuProfilePicture}
-            text="I enjoy seeing the boys, their smiles, and their laughter. When I’m going through hard times, sharing it with the boys and letting them share with me helps us support each other, which makes us feel safe."
+            text="“I’ve been coming to the Wednesday night program for over a year. I like coming because I like to see the boys. I’ve been going through hard things and sharing them with the boys—and letting them share with me. That way, we can help each other. It makes us feel safe.”"
+            rating={5}
+          />
+          <TestimonialCard
+            name="Seki"
+            image={JPProfilePicture}
+            text="“I love coming to PACS mentoring night. It makes me feel loved. It makes me feel safe. It lets me know that whatever I'm going through, I can speak up about it—and know that the boys in the group have my back. They can open up without feeling judged. You never know—maybe what they’re going through is something someone else is going through too. You can talk amongst each other, get to know each other, and feel safe to be yourself.”"
             rating={5}
           />
         </div>

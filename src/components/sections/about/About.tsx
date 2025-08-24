@@ -59,28 +59,16 @@ const About: React.FC = () => {
   const items: AboutItem[] = [
     {
       id: 1,
-      title:
-        "Weekly mentoring sessions, including Mentoring Night and Youth Leadership Mentoring",
+      title: "Empower youth through culturally-grounded programs",
     },
     {
       id: 2,
-      title:
-        "Opportunities to develop life skills, such as mental health awareness, conflict resolution, and career planning",
+      title: "Build strong community connections and leadership",
     },
     {
       id: 3,
       title:
-        "Collaboration with community leaders, including current and former NRL players and members of parliament",
-    },
-    {
-      id: 4,
-      title:
-        "A network of supportive sponsors and partners, ensuring our programs are impactful and sustainable",
-    },
-    {
-      id: 5,
-      title:
-        "A safe space for young people to share their experiences and find support.",
+        "Create safe, supportive spaces for youth from multicultural backgrounds",
     },
   ];
   return (
@@ -93,21 +81,32 @@ const About: React.FC = () => {
             data-aos="fade-up"
             className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px md:-pb-0"
           >
-            <SectionName>OUR MISSION</SectionName>
+            <SectionName>Welcome to PACS</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-              Helping Young People Realise Their{" "}
+              Pacific & Australian Community{" "}
               <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-                Potential
+                Services (PACS)
               </span>{" "}
             </h3>
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-6 pl-3 border-l-2 border-primaryColor">
-              PACS NSW is a not-for-profit organisation dedicated to empowering
-              young people through mentorship, guidance, and support. We focus
-              on creating a safe and inclusive space for youth to express
-              themselves, build skills, and forge a brighter future. Our
-              programs are designed to address real-life challenges while
-              fostering personal growth and community connections.
+              Pacific & Australian Community Services (PACS) is a registered
+              charity and not-for-profit organisation based in Western Sydney.
+              We are dedicated to empowering young people through mentorship,
+              guidance, and support. We focus on creating a safe and inclusive
+              space for youth to express themselves, build skills, and forge a
+              brighter future. Our programs are designed to address real-life
+              challenges while encouraging personal growth and community
+              connections. <br /> <br />
+              Our mission is simple:{" "}
+              <strong>
+                to build resilience, restore identity, and reimagine futures
+              </strong>{" "}
+              through mentoring, leadership programs, youth development, and
+              culturally safe community engagement.
             </p>
+            <h4 className="text-2xl font-bold text-blackColor dark:text-blackColor-dark pb-4">
+              What We Do:
+            </h4>
             <ul className="space-y-5">
               {items.map((item, idx) => (
                 <AboutListItem key={idx} item={item} />

@@ -20,13 +20,13 @@ const Hero1: React.FC = () => {
         <div className="container grid grid-cols-1 lg:grid-cols-2 items-top">
           {/* banner Left  */}
           <div data-aos="fade-up">
-            <HeroName>PACIFIC & AUSTRALIAN COMMUNITY SERVICES</HeroName>
+            <HeroName>Pacific & Australian Community Services (PACS)</HeroName>
             <HeadingLg color="white">
-              Individual Focused & Community Supported
+              Empowering Pasifika Futures — Through Culture, Connection & Care
             </HeadingLg>
             <ParagraphHero color="white">
-              Creating safe spaces for young people to grow, connect, and
-              succeed.
+              Supporting young people through mentorship, cultural identity and
+              leadership development
             </ParagraphHero>
             <div className="mt-30px md:mt-45px pb-25px md:pb-25px">
               <Link href="/contact">
