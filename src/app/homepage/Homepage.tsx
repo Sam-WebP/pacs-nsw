@@ -4,6 +4,7 @@ import Programs from "@/components/sections/programs/Programs";
 import Testimonials from "@/components/sections/testimonials/Testimonials";
 import Contact from "@/components/sections/contact/Contact";
 import React from "react";
+import Video from "@/components/sections/video/Video";
 
 const Homepage: React.FC = () => {
   return (
@@ -19,6 +20,9 @@ const Homepage: React.FC = () => {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <Video />
       </div>
       <div>
         <Contact />
