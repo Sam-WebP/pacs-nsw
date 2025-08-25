@@ -85,8 +85,9 @@ const About: React.FC = () => {
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
               Pacific & Australian Community{" "}
               <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-                Services (PACS)
-              </span>{" "}
+                Services
+              </span>
+              ‎ (PACS)
             </h3>
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-6 pl-3 border-l-2 border-primaryColor">
               Pacific & Australian Community Services (PACS) is a registered
