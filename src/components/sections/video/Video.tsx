@@ -14,7 +14,8 @@ const Video: React.FC = () => {
             </span>
           </h3>
           <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-6">
-            To understand the broader context of our work, check out the following video:
+            To understand the broader context of our work, check out the
+            following video:
           </p>
         </div>
         <div className="mt-8">
