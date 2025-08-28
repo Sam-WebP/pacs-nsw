@@ -3,8 +3,10 @@ import About from "@/components/sections/about/About";
 import Programs from "@/components/sections/programs/Programs";
 import Testimonials from "@/components/sections/testimonials/Testimonials";
 import Contact from "@/components/sections/contact/Contact";
+import AnnualReport from "@/components/sections/annual-report/AnnualReport";
+import Partnerships from "@/components/sections/partnerships/Partnerships";
+import GetInvolved from "@/components/sections/get-involved/GetInvolved";
 import React from "react";
-import Video from "@/components/sections/video/Video";
 
 const Homepage: React.FC = () => {
   return (
@@ -19,10 +21,16 @@ const Homepage: React.FC = () => {
         <Programs />
       </div>
       <div>
+        <GetInvolved />
+      </div>
+      <div>
         <Testimonials />
       </div>
       <div>
-        <Video />
+        <AnnualReport />
+      </div>
+      <div>
+        <Partnerships />
       </div>
       <div>
         <Contact />
