@@ -15,8 +15,9 @@ const Contact: React.FC = () => {
             </span>
           </h3>
           <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-6">
-            Have questions about our programs? Want to get involved? Reach out
-            to us using the form below.
+            We’d love to hear from you! Whether you have questions about our
+            programs, want to get involved, or simply need support, feel free to
+            reach out to us using the form below:
           </p>
         </div>
         <div className="flex justify-center">

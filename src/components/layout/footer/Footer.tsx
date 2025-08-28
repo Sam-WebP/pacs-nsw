@@ -14,6 +14,7 @@ const navigation: {
   main: [
     { name: "Home", href: "/" },
     { name: "Programs", href: "/programs" },
+    { name: "Contribute", href: "/contribute" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ],
