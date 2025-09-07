@@ -9,11 +9,11 @@ const HeadingLg: React.FC<HeadingLgProps> = ({ children, color }) => {
   return (
     <div>
       <h1
-        className={`text-2xl ${
+        className={`text-4xl ${
           color === "white"
             ? "text-whiteColor"
             : "text-blackColor dark:text-blackColor-dark"
-        } md:text-4xl lg:text-4xl 2xl:text-4xl leading-10 md:leading-18 lg:leading-62px 2xl:leading-18 md:tracking-half lg:tracking-normal 2xl:tracking-half font-bold mb-15px`}
+        } md:text-5xl lg:text-6xl 2xl:text-7xl leading-tight md:leading-tight lg:leading-tight 2xl:leading-tight tracking-tighter font-bold mb-4`}
       >
         {children}
       </h1>
