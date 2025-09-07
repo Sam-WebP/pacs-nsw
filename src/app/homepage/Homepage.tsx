@@ -10,29 +10,29 @@ import React from "react";
 
 const Homepage: React.FC = () => {
   return (
-    <main className="flex flex-col space-y-12 md:space-y-16 lg:space-y-22">
-      <div>
+    <main className="flex flex-col">
+      <div className="py-16 bg-bodyBg">
         <Hero1 />
       </div>
-      <div>
+      <div className="py-16 bg-bodyBg">
         <About />
       </div>
-      <div>
+      <div className="py-16 bg-white">
         <Programs />
       </div>
-      <div>
+      <div className="py-16 bg-bodyBg">
         <GetInvolved />
       </div>
-      <div>
+      <div className="py-16 bg-white">
         <Testimonials />
       </div>
-      <div>
+      <div className="py-16 bg-bodyBg">
         <AnnualReport />
       </div>
-      <div>
+      <div className="py-16 bg-white">
         <Partnerships />
       </div>
-      <div>
+      <div className="py-16 bg-bodyBg">
         <Contact />
       </div>
     </main>

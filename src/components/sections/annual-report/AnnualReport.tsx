@@ -5,7 +5,7 @@ import PlaceholderImage from "@/assets/images/placeholder-image.png";
 
 const AnnualReport: React.FC = () => {
   return (
-    <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
+    <section>
       <div className="container">
         <div className="max-w-[800px]">
           <SectionName>Annual Report 2024–2025</SectionName>
