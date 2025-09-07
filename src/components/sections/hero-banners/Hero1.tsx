@@ -28,7 +28,8 @@ const Hero1: React.FC = () => {
               Supporting young people through mentorship, cultural identity and
               leadership development
             </ParagraphHero>
-            <div className="mt-30px md:mt-45px pb-25px md:pb-25px">
+            {/* Buttons for smaller screens */}
+            <div className="mt-30px md:mt-45px pb-25px md:pb-25px lg:hidden">
               <Link href="/contact">
                 <ShimmerButton
                   className="mr-6px md:mr-30px shadow-hero-action"
@@ -62,6 +63,26 @@ const Hero1: React.FC = () => {
                 <source src={heroVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            </div>
+            {/* Buttons for larger screens */}
+            <div className="hidden lg:block mt-30px md:mt-45px">
+              <Link href="/contact">
+                <ShimmerButton
+                  className="mr-6px md:mr-30px shadow-hero-action"
+                  shimmerColor="#ffffff"
+                  background="var(--secondaryColor, #FE7200)"
+                >
+                  <span className="text-sm md:text-size-15 font-semibold text-darkdeep2 dark:text-darkdeep2">
+                    Get Involved
+                  </span>
+                </ShimmerButton>
+              </Link>
+              <Link
+                href="/about"
+                className="text-sm md:text-size-15 font-semibold text-whiteColor py-3 md:py-4 hover:text-secondaryColor inline-block"
+              >
+                Find out more <i className="icofont-long-arrow-right"></i>
+              </Link>
             </div>
           </div>
         </div>
