@@ -35,15 +35,6 @@ const Programs: React.FC = () => {
             description="This initiative supports the mental health of mature men, offering a culturally sensitive space to break stigmas and promote emotional well-being through shared stories and healing conversations."
           />
         </div>
-        <div className="mt-8 flex justify-center">
-          <Link href="/programs">
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Discover our programs
-              </span>
-            </ShimmerButton>
-          </Link>
-        </div>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
+import Link from "next/link";
 
 interface ProgramDetails {
   date: string;
@@ -28,26 +29,37 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
       <div className="relative h-[240px] w-full">
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
-      <div className="p-8 sm:p-9 md:p-7 xl:p-9 flex-grow">
-        <h3 className="mb-4 text-xl font-semibold text-primaryColor dark:text-blackColor-dark hover:text-primaryColor sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-          {title}
-        </h3>
-        <p className="text-base leading-relaxed text-contentColor dark:text-contentColor-dark">
-          {description}
-        </p>
-        {details && (
-          <div className="mb-7 space-y-2 text-contentColor dark:text-contentColor-dark">
-            <p>
-              <strong>Date:</strong> {details.date}
-            </p>
-            <p>
-              <strong>Time:</strong> {details.time}
-            </p>
-            <p>
-              <strong>Location:</strong> {details.location}
-            </p>
-          </div>
-        )}
+      <div className="p-8 sm:p-9 md:p-7 xl:p-9 flex flex-col justify-between flex-grow">
+        <div>
+          <h3 className="mb-4 text-xl font-semibold text-primaryColor dark:text-blackColor-dark hover:text-primaryColor sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+            {title}
+          </h3>
+          <p className="text-base leading-relaxed text-contentColor dark:text-contentColor-dark">
+            {description}
+          </p>
+          {details && (
+            <div className="mb-7 space-y-2 text-contentColor dark:text-contentColor-dark">
+              <p>
+                <strong>Date:</strong> {details.date}
+              </p>
+              <p>
+                <strong>Time:</strong> {details.time}
+              </p>
+              <p>
+                <strong>Location:</strong> {details.location}
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="mt-4">
+          <Link href="/programs">
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Learn More
+              </span>
+            </ShimmerButton>
+          </Link>
+        </div>
       </div>
     </div>
   );
