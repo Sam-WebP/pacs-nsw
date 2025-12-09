@@ -3,7 +3,12 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import SectionName from "@/components/shared/section-names/SectionName";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import CollaborationImage from "@/assets/images/New Photos/Collaboration is at the Heart of What We Do.png";
+import CobhamLogo from "@/assets/images/New Photos/Cobham Youth Justice.png";
+import PolenLogo from "@/assets/images/New Photos/POLEN - 1.png";
+import MCMLogo from "@/assets/images/New Photos/MCM - 1.png";
+import PowerEnclaveLogo from "@/assets/images/New Photos/Power Enclave.png";
+import LupeokoLogo from "@/assets/images/New Photos/Lupeoko Tongan Arts - 1.png";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 import { cn } from "@/lib/utils";
 
@@ -15,11 +20,13 @@ const PartnerCard: React.FC<{
 }> = ({ title, logo, children }) => (
   <div className="overflow-hidden rounded-lg bg-white dark:bg-darkdeep2 p-6 shadow-lg flex flex-col h-full text-center items-center">
     {/* Logo Area */}
-    <div className="relative h-24 w-full flex justify-center items-center mb-4 bg-gray-50 rounded-lg p-2">
+    <div className="relative aspect-square w-full max-w-[180px] bg-gray-50 rounded-lg overflow-hidden mb-4">
       <Image
         src={logo}
         alt={`${title} Logo`}
-        className="object-contain max-h-full max-w-full"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
       />
     </div>
     {/* Content Area */}
@@ -82,7 +89,7 @@ const PartnershipsPage: React.FC = () => {
               {/* Right side: Image */}
               <div data-aos="fade-up" className="flex justify-center">
                 <Image
-                  src={PlaceholderImage}
+                  src={CollaborationImage}
                   alt="Community collaboration meeting"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />
@@ -105,7 +112,7 @@ const PartnershipsPage: React.FC = () => {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-8">
               <PartnerCard
                 title="Cobham Youth Justice Centre"
-                logo={PlaceholderImage}
+                logo={CobhamLogo}
               >
                 We work in partnership to support young people within the
                 justice system, promoting strong leadership, cultural
@@ -114,7 +121,7 @@ const PartnershipsPage: React.FC = () => {
               </PartnerCard>
               <PartnerCard
                 title="POLEN (Pacific Islands Liaison and Engagement Network)"
-                logo={PlaceholderImage}
+                logo={PolenLogo}
               >
                 Through structured dialogues and relationship-building
                 initiatives, POLEN helps build trust and understanding between
@@ -123,7 +130,7 @@ const PartnershipsPage: React.FC = () => {
               </PartnerCard>
               <PartnerCard
                 title="Multicultural Community Mentors (MCM)"
-                logo={PlaceholderImage}
+                logo={MCMLogo}
               >
                 MCM supports our culturally rich workshops that focus on
                 leadership development, critical thinking, and Pacific-specific
@@ -132,7 +139,7 @@ const PartnershipsPage: React.FC = () => {
               </PartnerCard>
               <PartnerCard
                 title="Power Enclave Support Services"
-                logo={PlaceholderImage}
+                logo={PowerEnclaveLogo}
               >
                 In 2025, PACS partnered with Power Enclave Support Services for
                 a special screening of Tinā, a film celebrating resilience and
@@ -140,7 +147,7 @@ const PartnershipsPage: React.FC = () => {
               </PartnerCard>
               <PartnerCard
                 title="Lupeoko Tongan Performing Arts"
-                logo={PlaceholderImage}
+                logo={LupeokoLogo}
               >
                 This partnership offers a dedicated cultural space for Tongan
                 youth to express themselves through traditional performing arts,

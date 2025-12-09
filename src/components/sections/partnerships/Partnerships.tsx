@@ -3,21 +3,48 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionName from "@/components/shared/section-names/SectionName";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import CobhamLogo from "@/assets/images/New Photos/Cobham Youth Justice.png";
+import PolenLogo from "@/assets/images/New Photos/POLEN - 1.png";
+import MCMLogo from "@/assets/images/New Photos/MCM - 1.png";
+import PowerEnclaveLogo from "@/assets/images/New Photos/Power Enclave.png";
+import LupeokoLogo from "@/assets/images/New Photos/Lupeoko Tongan Arts - 1.png";
 
-const PartnerLogo: React.FC<{ name: string }> = ({ name }) => (
-  <div className="flex flex-col items-center text-center">
-    <div className="relative h-20 w-32 bg-gray-100 rounded-lg flex items-center justify-center p-2">
-      {/* In a real scenario, you'd use partner logo images here */}
-      <Image
-        src={PlaceholderImage}
-        alt={`${name} Logo`}
-        className="object-contain max-h-full max-w-full"
-      />
+const PartnerLogo: React.FC<{ name: string }> = ({ name }) => {
+  let logo;
+  switch (name) {
+    case "Cobham Youth Justice":
+      logo = CobhamLogo;
+      break;
+    case "POLEN":
+      logo = PolenLogo;
+      break;
+    case "MCM":
+      logo = MCMLogo;
+      break;
+    case "Power Enclave":
+      logo = PowerEnclaveLogo;
+      break;
+    case "Lupeoko Tongan Arts":
+      logo = LupeokoLogo;
+      break;
+    default:
+      logo = CobhamLogo; // fallback
+  }
+  return (
+    <div className="flex flex-col items-center text-center">
+      <div className="relative aspect-square w-full max-w-[180px] bg-gray-100 rounded-lg overflow-hidden">
+        <Image
+          src={logo}
+          alt={`${name} Logo`}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+        />
+      </div>
+      <p className="mt-2 text-sm font-medium text-contentColor">{name}</p>
     </div>
-    <p className="mt-2 text-sm font-medium text-contentColor">{name}</p>
-  </div>
-);
+  );
+};
 
 const Partnerships: React.FC = () => {
   const partners = [
