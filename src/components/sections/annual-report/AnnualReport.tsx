@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SectionName from "@/components/shared/section-names/SectionName";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import BrucePhoto from "@/assets/images/New Photos/Photo of Bruce - to go with his founder message.png";
 
 const AnnualReport: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ const AnnualReport: React.FC = () => {
             <div className="flex items-start sm:items-center gap-4 flex-col sm:flex-row">
               <Image
                 alt="Founder Bruce Pikula"
-                src={PlaceholderImage}
+                src={BrucePhoto}
                 className="size-16 rounded-full object-cover"
                 width={64}
                 height={64}

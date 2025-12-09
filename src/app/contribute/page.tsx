@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import SectionName from "@/components/shared/section-names/SectionName";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import LastingImpactImage from "@/assets/images/New Photos/Make a Lasting Impact.png";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 import Video from "@/components/sections/video/Video";
 import { cn } from "@/lib/utils";
@@ -71,7 +71,7 @@ const GetInvolvedPage: React.FC = () => {
               {/* Right side: Image */}
               <div data-aos="fade-up" className="flex justify-center">
                 <Image
-                  src={PlaceholderImage}
+                  src={LastingImpactImage}
                   alt="Community members working together"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />

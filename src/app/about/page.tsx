@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import SectionName from "@/components/shared/section-names/SectionName";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import CommunityDrivenImage1 from "@/assets/images/New Photos/A Community-Driven Organisation - 1.png";
+import CommunityDrivenImage2 from "@/assets/images/New Photos/A Community-Driven Organisation - 2.png";
 import { cn } from "@/lib/utils";
 
 // A simple card component for this page, styled like others in the project.
@@ -72,7 +73,7 @@ const AboutPage: React.FC = () => {
               {/* Right side: Image */}
               <div data-aos="fade-up" className="flex justify-center">
                 <Image
-                  src={PlaceholderImage}
+                  src={CommunityDrivenImage1}
                   alt="PACS Community Engagement"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />
@@ -91,7 +92,7 @@ const AboutPage: React.FC = () => {
                 className="flex justify-center order-1 lg:order-1"
               >
                 <Image
-                  src={PlaceholderImage}
+                  src={CommunityDrivenImage2}
                   alt="Our Vision for the Future"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />
