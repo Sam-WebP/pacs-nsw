@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import SectionName from "@/components/shared/section-names/SectionName";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program - 1.png";
+import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program - 1.png";
+import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group - 1.png";
 
 const ProgramsPage: React.FC = () => {
   return (
@@ -65,7 +67,7 @@ const ProgramsPage: React.FC = () => {
               {/* Right side: Image */}
               <div data-aos="fade-up" className="flex justify-center">
                 <Image
-                  src={PlaceholderImage}
+                  src={YouthOutreachImage}
                   alt="Youth mentorship session"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[500px]"
                 />
@@ -84,7 +86,7 @@ const ProgramsPage: React.FC = () => {
                 className="flex justify-center order-1 lg:order-1"
               >
                 <Image
-                  src={PlaceholderImage}
+                  src={PasifikaLeadershipImage}
                   alt="Leadership and personal development"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[500px]"
                 />
@@ -163,7 +165,7 @@ const ProgramsPage: React.FC = () => {
               {/* Right side: Image */}
               <div data-aos="fade-up" className="flex justify-center">
                 <Image
-                  src={PlaceholderImage}
+                  src={PACSMenGroupImage}
                   alt="A supportive group discussion"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[500px]"
                 />

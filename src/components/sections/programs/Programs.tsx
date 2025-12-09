@@ -1,7 +1,9 @@
 import React from "react";
 import SectionName from "@/components/shared/section-names/SectionName";
 import ProgramCard from "./ProgramCard";
-import PlaceholderImage from "@/assets/images/placeholder-image.png";
+import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program - 1.png";
+import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program - 1.png";
+import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group - 1.png";
 import Link from "next/link";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
@@ -20,17 +22,17 @@ const Programs: React.FC = () => {
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           <ProgramCard
-            image={PlaceholderImage}
+            image={YouthOutreachImage}
             title="Youth Outreach Engagement & Steps to Success Program"
             description="Supports disengaged youth with mentorship and life skills including workshops on anger management, cultural identity, and resilience. Steps to Success provides one-on-one mentorship and promotes positive decision-making through culturally grounded leadership development."
           />
           <ProgramCard
-            image={PlaceholderImage}
+            image={PasifikaLeadershipImage}
             title="Pasifika Leadership Pathways Program"
             description="In partnership with correctional facilities, this program addresses reoffending and promotes reintegration through culturally rich leadership training. Youth reconnect with their identity, learn goal-setting, and build resilience in a safe, supportive environment."
           />
           <ProgramCard
-            image={PlaceholderImage}
+            image={PACSMenGroupImage}
             title="PACS Men's Group"
             description="This initiative supports the mental health of mature men, offering a culturally sensitive space to break stigmas and promote emotional well-being through shared stories and healing conversations."
           />
