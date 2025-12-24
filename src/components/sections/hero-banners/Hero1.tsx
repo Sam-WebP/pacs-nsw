@@ -22,7 +22,7 @@ const Hero1: React.FC = () => {
           <div data-aos="fade-up">
             <HeroName>Pacific & Australian Community Services (PACS)</HeroName>
             <HeadingLg color="white">
-              Empowering Pasifika Futures — Through Culture, Connection & Care
+              Empowering Pasifika Futures - Through Culture, Connection & Care
             </HeadingLg>
             <ParagraphHero color="white">
               Supporting young people through mentorship, cultural identity and

@@ -23,13 +23,13 @@ const Testimonials: React.FC = () => {
           <TestimonialCard
             name="Samu"
             image={SamuProfilePicture}
-            text="“I’ve been coming to the Wednesday night program for over a year. I like coming because I like to see the boys. I’ve been going through hard things and sharing them with the boys—and letting them share with me. That way, we can help each other. It makes us feel safe.”"
+            text="“I’ve been coming to the Wednesday night program for over a year. I like coming because I like to see the boys. I’ve been going through hard things and sharing them with the boys-and letting them share with me. That way, we can help each other. It makes us feel safe.”"
             rating={5}
           />
           <TestimonialCard
             name="Seki"
             image={JPProfilePicture}
-            text="“I love coming to PACS mentoring night. It makes me feel loved. It makes me feel safe. It lets me know that whatever I'm going through, I can speak up about it—and know that the boys in the group have my back. They can open up without feeling judged. You never know—maybe what they’re going through is something someone else is going through too. You can talk amongst each other, get to know each other, and feel safe to be yourself.”"
+            text="“I love coming to PACS mentoring night. It makes me feel loved. It makes me feel safe. It lets me know that whatever I'm going through, I can speak up about it-and know that the boys in the group have my back. They can open up without feeling judged. You never know-maybe what they’re going through is something someone else is going through too. You can talk amongst each other, get to know each other, and feel safe to be yourself.”"
             rating={5}
           />
         </div>

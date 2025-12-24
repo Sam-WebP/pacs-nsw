@@ -38,7 +38,7 @@ const ProgramsPage: React.FC = () => {
                     The <strong>Youth Outreach Engagement Program</strong>,
                     operating in Liverpool and Oran Park, is designed to support
                     disengaged Pacific Islander youth who face complex social,
-                    emotional, and cultural challenges—particularly those at
+                    emotional, and cultural challenges-particularly those at
                     risk of involvement with the justice system. Through
                     interactive workshops and one-on-one support, we provide
                     practical tools to help participants manage anger, build
@@ -50,13 +50,13 @@ const ProgramsPage: React.FC = () => {
                     <strong>Steps to Success Program</strong>, which offers
                     personalised mentorship to young men navigating significant
                     life challenges. Participants are matched with mentors from
-                    the local community—many of whom have overcome similar
-                    struggles—allowing for authentic, relatable guidance and
+                    the local community-many of whom have overcome similar
+                    struggles-allowing for authentic, relatable guidance and
                     support.
                   </p>
                   <p>
                     Our approach recognises that these youth are not just at
-                    risk—they are full of potential. Through this program, they
+                    risk-they are full of potential. Through this program, they
                     are empowered to become leaders, storytellers, and
                     system-shapers, equipped to challenge stereotypes and
                     contribute meaningfully to their communities.
@@ -156,7 +156,7 @@ const ProgramsPage: React.FC = () => {
                   </p>
                   <p>
                     This holistic approach honours the importance of mental
-                    health while respecting the cultural context—empowering
+                    health while respecting the cultural context-empowering
                     mature men to grow, heal, and thrive together.
                   </p>
                 </div>

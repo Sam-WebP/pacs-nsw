@@ -64,7 +64,7 @@ const AboutPage: React.FC = () => {
                 </p>
                 <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
                   We focus on leadership development, cultural identity, and
-                  meaningful community engagement—empowering young people from
+                  meaningful community engagement-empowering young people from
                   Pacific Islander and multicultural backgrounds to become
                   leaders, storytellers, and agents of change.
                 </p>
@@ -106,7 +106,7 @@ const AboutPage: React.FC = () => {
                   </h3>
                   <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark pl-3 border-l-2 border-primaryColor">
                     We envision a future where Australian Pasifika individuals
-                    and families thrive—equipped with the tools, support, and
+                    and families thrive-equipped with the tools, support, and
                     opportunities to break barriers and build meaningful lives
                     within their communities.
                   </p>

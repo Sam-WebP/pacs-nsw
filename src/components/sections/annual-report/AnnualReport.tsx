@@ -49,7 +49,7 @@ const AnnualReport: React.FC = () => {
               </p>
               <p>
                 Over the past year, I’ve witnessed how powerful these
-                connections can be—how a single conversation, a shared story, or
+                connections can be-how a single conversation, a shared story, or
                 a meaningful experience can spark change. And when these
                 connections grow, they create something even more powerful:
                 collaboration.
@@ -60,14 +60,14 @@ const AnnualReport: React.FC = () => {
                 ways that are real, relevant, and respectful. Whether it’s
                 through our ongoing work with partners like Cobham Youth
                 Justice, POLEN, MCM, or the NRL community, or in the day-to-day
-                mentoring circles, cultural camps, or community forums—we’ve
+                mentoring circles, cultural camps, or community forums-we’ve
                 seen that genuine connection opens doors to lasting change.
               </p>
               <p>
                 Young people are at the centre of this work. They’re not just
                 participants; they’re leaders, storytellers, and system-shapers.
-                When we invest in them—through mentoring, leadership
-                development, and cultural identity work—we’re investing in a
+                When we invest in them-through mentoring, leadership
+                development, and cultural identity work-we’re investing in a
                 stronger, more united future.
               </p>
               <p>
@@ -78,7 +78,7 @@ const AnnualReport: React.FC = () => {
               </p>
               <p>
                 As we look to the future, we’ll keep building with the same
-                values we started with—culture, connection, and care. Because
+                values we started with-culture, connection, and care. Because
                 it’s through these relationships that real, lasting
                 transformation takes place.
               </p>

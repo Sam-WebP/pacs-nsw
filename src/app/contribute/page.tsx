@@ -60,8 +60,8 @@ const GetInvolvedPage: React.FC = () => {
                     Sydney.
                   </p>
                   <p>
-                    With your involvement—whether through donations,
-                    volunteering, or strategic partnerships—we can continue to
+                    With your involvement-whether through donations,
+                    volunteering, or strategic partnerships-we can continue to
                     create culturally safe spaces, deliver life-changing
                     programs, and build stronger futures for our communities.
                   </p>
@@ -132,7 +132,7 @@ const GetInvolvedPage: React.FC = () => {
             </h3>
             <p className="mt-4 text-lg text-contentColor dark:text-contentColor-dark max-w-3xl mx-auto">
               By getting involved with PACS, you&rsquo;re not just supporting a
-              cause—you’re becoming part of a movement to break cycles of
+              cause-you’re becoming part of a movement to break cycles of
               disadvantage, celebrate culture, and nurture future leaders.
               Together, we can create opportunities, build resilience, and
               support Pasifika youth in reaching their full potential.
