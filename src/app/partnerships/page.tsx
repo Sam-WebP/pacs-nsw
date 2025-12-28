@@ -9,6 +9,7 @@ import PolenLogo from "@/assets/images/New Photos/POLEN - 1.png";
 import MCMLogo from "@/assets/images/New Photos/MCM - 1.png";
 import PowerEnclaveLogo from "@/assets/images/New Photos/Power Enclave.png";
 import LupeokoLogo from "@/assets/images/New Photos/Lupeoko Tongan Arts - 1.png";
+import ReibyLogo from "@/assets/images/Community Partners Logos/reiby.jpeg";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 import { cn } from "@/lib/utils";
 
@@ -152,6 +153,16 @@ const PartnershipsPage: React.FC = () => {
                 This partnership offers a dedicated cultural space for Tongan
                 youth to express themselves through traditional performing arts,
                 connect with their heritage, and develop confidence.
+              </PartnerCard>
+              <PartnerCard
+                title="Reiby Juvenile Justice Centre"
+                logo={ReibyLogo}
+              >
+                We partner with Reiby to deliver mentoring and cultural programs
+                that empower young people in custody, building resilience,
+                positive identity, and pathways for growth. Our focus on
+                leadership, connection, and practical life skills supports them
+                to make positive choices and reduce reoffending.
               </PartnerCard>
             </div>
           </div>

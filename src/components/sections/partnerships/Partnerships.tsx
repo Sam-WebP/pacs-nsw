@@ -3,11 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionName from "@/components/shared/section-names/SectionName";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
-import CobhamLogo from "@/assets/images/New Photos/Cobham Youth Justice.png";
-import PolenLogo from "@/assets/images/New Photos/POLEN - 1.png";
-import MCMLogo from "@/assets/images/New Photos/MCM - 1.png";
-import PowerEnclaveLogo from "@/assets/images/New Photos/Power Enclave.png";
-import LupeokoLogo from "@/assets/images/New Photos/Lupeoko Tongan Arts - 1.png";
+import CobhamLogo from "@/assets/images/Community Partners Logos/Cobham.jpeg";
+import PolenLogo from "@/assets/images/Community Partners Logos/Polen.jpeg";
+import MCMLogo from "@/assets/images/Community Partners Logos/MCM.jpeg";
+import PowerEnclaveLogo from "@/assets/images/Community Partners Logos/Power Enclave.jpeg";
+import LupeokoLogo from "@/assets/images/Community Partners Logos/Lupeoko.jpeg";
+import ReibyLogo from "@/assets/images/Community Partners Logos/reiby.jpeg";
 
 const PartnerLogo: React.FC<{ name: string }> = ({ name }) => {
   let logo;
@@ -27,17 +28,20 @@ const PartnerLogo: React.FC<{ name: string }> = ({ name }) => {
     case "Lupeoko Tongan Arts":
       logo = LupeokoLogo;
       break;
+    case "Reiby Juvenile Justice":
+      logo = ReibyLogo;
+      break;
     default:
       logo = CobhamLogo; // fallback
   }
   return (
     <div className="flex flex-col items-center text-center">
-      <div className="relative aspect-square w-full max-w-[180px] bg-gray-100 rounded-lg overflow-hidden">
+      <div className="relative aspect-video w-full max-w-[200px] bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
         <Image
           src={logo}
           alt={`${name} Logo`}
           fill
-          className="object-cover"
+          className="object-contain p-2"
           sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
         />
       </div>
@@ -53,6 +57,7 @@ const Partnerships: React.FC = () => {
     "MCM",
     "Power Enclave",
     "Lupeoko Tongan Arts",
+    "Reiby Juvenile Justice",
   ];
 
   return (
@@ -75,7 +80,7 @@ const Partnerships: React.FC = () => {
         </div>
 
         {/* Partner Logos */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-8 gap-x-4 mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-8 gap-x-4 mt-8">
           {partners.map((partner) => (
             <PartnerLogo key={partner} name={partner} />
           ))}
