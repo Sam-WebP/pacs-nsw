@@ -19,6 +19,20 @@ import marquee9 from "@/assets/images/marquee_9.webp";
 import marquee10 from "@/assets/images/marquee_10.webp";
 import marquee11 from "@/assets/images/marquee_11.webp";
 import marquee12 from "@/assets/images/marquee_12.webp";
+import unnamed0 from "@/assets/images/Marquee Photos/unnamed.jpg";
+import unnamed1 from "@/assets/images/Marquee Photos/unnamed (1).jpg";
+import unnamed2 from "@/assets/images/Marquee Photos/unnamed (2).jpg";
+import unnamed3 from "@/assets/images/Marquee Photos/unnamed (3).jpg";
+import unnamed4 from "@/assets/images/Marquee Photos/unnamed (4).jpg";
+import unnamed5 from "@/assets/images/Marquee Photos/unnamed (5).jpg";
+import unnamed6 from "@/assets/images/Marquee Photos/unnamed (6).jpg";
+import unnamed7 from "@/assets/images/Marquee Photos/unnamed (7).jpg";
+import unnamed8 from "@/assets/images/Marquee Photos/unnamed (8).jpg";
+import unnamed9 from "@/assets/images/Marquee Photos/unnamed (9).jpg";
+import unnamed10 from "@/assets/images/Marquee Photos/unnamed (10).jpg";
+import unnamed11 from "@/assets/images/Marquee Photos/unnamed (11).jpg";
+import unnamed12 from "@/assets/images/Marquee Photos/unnamed (12).jpg";
+import unnamed13 from "@/assets/images/Marquee Photos/unnamed (13).jpg";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 interface AboutItem {
@@ -52,6 +66,20 @@ const About: React.FC = () => {
     { img: marquee10 },
     { img: marquee11 },
     { img: marquee12 },
+    { img: unnamed0 },
+    { img: unnamed1 },
+    { img: unnamed2 },
+    { img: unnamed3 },
+    { img: unnamed4 },
+    { img: unnamed5 },
+    { img: unnamed6 },
+    { img: unnamed7 },
+    { img: unnamed8 },
+    { img: unnamed9 },
+    { img: unnamed10 },
+    { img: unnamed11 },
+    { img: unnamed12 },
+    { img: unnamed13 },
   ];
   const firstRow = marqueeImages.slice(0, marqueeImages.length / 2);
   const secondRow = marqueeImages.slice(marqueeImages.length / 2);

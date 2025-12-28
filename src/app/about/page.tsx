@@ -197,6 +197,47 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Section 6: Our Approach to Wellbeing & Community Safety */}
+        <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
+          <div className="container">
+            <div className="max-w-[800px]">
+              <SectionName>OUR APPROACH</SectionName>
+              <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
+                Our Approach to{" "}
+                <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
+                  Wellbeing
+                </span>
+                ‎ &{" "}
+                <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
+                  Community Safety
+                </span>
+              </h2>
+              <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-4">
+                At PACS, we recognise that many individuals and families face
+                interconnected challenges including mental health concerns,
+                alcohol and other drug use, and domestic and family violence.
+                These issues rarely exist in isolation and are often shaped by
+                trauma, social circumstances and cultural disconnection. Through
+                a holistic, wrap-around approach, we work alongside trusted
+                partners to provide culturally responsive, trauma-informed
+                support that promotes early intervention, healing and long-term
+                wellbeing.
+              </p>
+              <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
+                Through mentoring and leadership programs, we support young
+                people and families to build confidence, life skills and healthy
+                coping strategies, helping to reduce isolation, harmful
+                behaviours and cycles of abuse or dependency. By connecting
+                individuals with specialist mental health, alcohol and drug,
+                counselling and domestic violence services, PACS aims to
+                strengthen not only individual outcomes, but the safety,
+                resilience and cultural wellbeing of the broader Pasifika
+                community.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </PageWrapper>
   );
