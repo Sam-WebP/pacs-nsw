@@ -1,9 +1,9 @@
 import React from "react";
 import SectionName from "@/components/shared/section-names/SectionName";
 import TestimonialCard from "./TestimonialCard";
-import JPProfilePicture from "@/assets/images/jp_profile_picture.webp";
-import HarlemProfilePicture from "@/assets/images/harlem_profile_picture.webp";
+import SekiProfilePicture from "@/assets/images/Seki.jpeg";
 import SamuProfilePicture from "@/assets/images/samu_profile_picture.webp";
+import ViliamiProfilePicture from "@/assets/images/New Photos/Viliami.jpeg";
 
 const Testimonials: React.FC = () => {
   return (
@@ -28,8 +28,14 @@ const Testimonials: React.FC = () => {
           />
           <TestimonialCard
             name="Seki"
-            image={JPProfilePicture}
+            image={SekiProfilePicture}
             text="“I love coming to PACS mentoring night. It makes me feel loved. It makes me feel safe. It lets me know that whatever I'm going through, I can speak up about it-and know that the boys in the group have my back. They can open up without feeling judged. You never know-maybe what they’re going through is something someone else is going through too. You can talk amongst each other, get to know each other, and feel safe to be yourself.”"
+            rating={5}
+          />
+          <TestimonialCard
+            name="Viliami"
+            image={ViliamiProfilePicture}
+            text="“Three things I love from the PACS program, is getting advice, seeing the boys and getting feeds. Just trying to change my life around and be a respectful person. Starting to realise that my actions are not a great look. So the program is helping me learn how to control my temper and my language and attend school more often.”"
             rating={5}
           />
         </div>
