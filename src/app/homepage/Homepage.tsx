@@ -6,34 +6,55 @@ import Contact from "@/components/sections/contact/Contact";
 import AnnualReport from "@/components/sections/annual-report/AnnualReport";
 import Partnerships from "@/components/sections/partnerships/Partnerships";
 import GetInvolved from "@/components/sections/get-involved/GetInvolved";
+import {
+  ScrollReveal,
+  ScrollRevealLeft,
+  ScrollRevealRight,
+} from "@/components/ui/ScrollReveal";
 import React from "react";
 
 const Homepage: React.FC = () => {
   return (
     <main className="flex flex-col">
       <div className="py-16 bg-bodyBg">
-        <Hero1 />
+        <ScrollReveal>
+          <Hero1 />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-bodyBg">
-        <About />
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-white">
-        <Programs />
+        <ScrollReveal>
+          <Programs />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-bodyBg">
-        <GetInvolved />
+        <ScrollReveal>
+          <GetInvolved />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-white">
-        <Testimonials />
+        <ScrollReveal>
+          <Testimonials />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-bodyBg">
-        <AnnualReport />
+        <ScrollReveal>
+          <AnnualReport />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-white">
-        <Partnerships />
+        <ScrollReveal>
+          <Partnerships />
+        </ScrollReveal>
       </div>
       <div className="py-16 bg-bodyBg">
-        <Contact />
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
       </div>
     </main>
   );
