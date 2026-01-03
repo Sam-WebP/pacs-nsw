@@ -3,6 +3,7 @@ import Link from "next/link";
 import SectionName from "@/components/shared/section-names/SectionName";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 import Script from "next/script";
+import { ScrollReveal, ScrollRevealRight } from "@/components/ui/ScrollReveal";
 
 // Simple item for the list
 const InvolvementItem: React.FC<{ children: React.ReactNode }> = ({
@@ -22,7 +23,7 @@ const GetInvolved: React.FC = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-10 items-center">
           {/* Left Column: Text Content */}
-          <div data-aos="fade-up">
+          <ScrollReveal delay={0.1}>
             <SectionName>GET INVOLVED</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
               Support PACS & Make a Lasting{" "}
@@ -32,9 +33,9 @@ const GetInvolved: React.FC = () => {
             </h3>
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-8">
               Your support is crucial in helping us empower Pasifika youth and
-              men. Whether through donations, volunteering, or partnerships,
-              your involvement helps us create culturally safe spaces and
-              deliver life-changing programs.
+              men. Whether through donations, volunteering, or involvement helps
+              us create culturally safe spaces and partnerships, your deliver
+              life-changing programs.
             </p>
 
             {/* Ways to help */}
@@ -55,10 +56,10 @@ const GetInvolved: React.FC = () => {
                 </ShimmerButton>
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right Column: Instagram Embed */}
-          <div data-aos="fade-up">
+          <ScrollReveal delay={0.2}>
             <blockquote
               className="instagram-media"
               data-instgrm-permalink="https://www.instagram.com/reel/DIi01HQRMrF/?utm_source=ig_embed&utm_campaign=loading"
@@ -343,7 +344,7 @@ const GetInvolved: React.FC = () => {
             </blockquote>
             {/* Instagram Embed Script */}
             <Script src="//www.instagram.com/embed.js" strategy="lazyOnload" />
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

@@ -12,6 +12,10 @@ import LupeokoLogo from "@/assets/images/New Photos/Lupeoko Tongan Arts - 1.png"
 import ReibyLogo from "@/assets/images/New Photos/Reiby Juvenile Justice Centre.png";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 import { cn } from "@/lib/utils";
+import {
+  ScrollReveal,
+  ScrollRevealStagger,
+} from "@/components/ui/ScrollReveal";
 
 // Updated card component to include a logo
 const PartnerCard: React.FC<{
@@ -49,9 +53,11 @@ const PartnershipsPage: React.FC = () => {
         {/* Section 1: Page Header */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-blackColor dark:text-blackColor-dark">
-              Partnerships & Collaborations
-            </h1>
+            <ScrollReveal>
+              <h1 className="text-4xl md:text-5xl font-bold text-blackColor dark:text-blackColor-dark">
+                Partnerships & Collaborations
+              </h1>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -60,7 +66,7 @@ const PartnershipsPage: React.FC = () => {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Text content */}
-              <div data-aos="fade-up">
+              <ScrollReveal>
                 <SectionName>KEY PARTNERSHIPS</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
                   Collaboration is at the{" "}
@@ -79,22 +85,22 @@ const PartnershipsPage: React.FC = () => {
                     real, lasting change.
                   </p>
                   <p>
-                    Whether it&rsquo;s through justice reform, cultural
-                    preservation, or mentorship and leadership development, our
-                    partners help us amplify our efforts and connect with those
-                    who need support the most.
+                    Whether it's through justice reform, cultural preservation,
+                    or mentorship and leadership development, our partners help
+                    us amplify our efforts and connect with those who need
+                    support the most.
                   </p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right side: Image */}
-              <div data-aos="fade-up" className="flex justify-center">
+              <ScrollReveal delay={0.2} className="flex justify-center">
                 <Image
                   src={CollaborationImage}
                   alt="Community collaboration meeting"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -102,90 +108,95 @@ const PartnershipsPage: React.FC = () => {
         {/* Section 3: Detailed Partner List */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container">
-            <div className="max-w-[800px]">
+            <ScrollReveal>
               <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
                 Our Key{" "}
                 <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
                   Partners
                 </span>
               </h2>
-            </div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-8">
-              <PartnerCard
-                title="Cobham Youth Justice Centre"
-                logo={CobhamLogo}
-              >
-                We work in partnership to support young people within the
-                justice system, promoting strong leadership, cultural
-                reconnection, and life skills that help break the cycle of
-                recidivism.
-              </PartnerCard>
-              <PartnerCard
-                title="POLEN (Pacific Islands Liaison and Engagement Network)"
-                logo={PolenLogo}
-              >
-                Through structured dialogues and relationship-building
-                initiatives, POLEN helps build trust and understanding between
-                youth and law enforcement, creating safer and more supportive
-                community interactions.
-              </PartnerCard>
-              <PartnerCard
-                title="Multicultural Community Mentors (MCM)"
-                logo={MCMLogo}
-              >
-                MCM supports our culturally rich workshops that focus on
-                leadership development, critical thinking, and Pacific-specific
-                issues. Together, we empower youth with the tools to become
-                confident, informed change-makers.
-              </PartnerCard>
-              <PartnerCard
-                title="Power Enclave Support Services"
-                logo={PowerEnclaveLogo}
-              >
-                In 2025, PACS partnered with Power Enclave Support Services for
-                a special screening of Tinā, a film celebrating resilience and
-                cultural identity. All ticket proceeds supported PACS programs.
-              </PartnerCard>
-              <PartnerCard
-                title="Lupeoko Tongan Performing Arts"
-                logo={LupeokoLogo}
-              >
-                This partnership offers a dedicated cultural space for Tongan
-                youth to express themselves through traditional performing arts,
-                connect with their heritage, and develop confidence.
-              </PartnerCard>
-              <PartnerCard
-                title="Reiby Juvenile Justice Centre"
-                logo={ReibyLogo}
-              >
-                We partner with Reiby to deliver mentoring and cultural programs
-                that empower young people in custody, building resilience,
-                positive identity, and pathways for growth. Our focus on
-                leadership, connection, and practical life skills supports them
-                to make positive choices and reduce reoffending.
-              </PartnerCard>
-            </div>
+            </ScrollReveal>
+            <ScrollRevealStagger staggerChildren={0.1} delayChildren={0.1}>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-8">
+                <PartnerCard
+                  title="Cobham Youth Justice Centre"
+                  logo={CobhamLogo}
+                >
+                  We work in partnership to support young people within the
+                  justice system, promoting strong leadership, cultural
+                  reconnection, and life skills that help break the cycle of
+                  recidivism.
+                </PartnerCard>
+                <PartnerCard
+                  title="POLEN (Pacific Islands Liaison and Engagement Network)"
+                  logo={PolenLogo}
+                >
+                  Through structured dialogues and relationship-building
+                  initiatives, POLEN helps build trust and understanding between
+                  youth and law enforcement, creating safer and more supportive
+                  community interactions.
+                </PartnerCard>
+                <PartnerCard
+                  title="Multicultural Community Mentors (MCM)"
+                  logo={MCMLogo}
+                >
+                  MCM supports our culturally rich workshops that focus on
+                  leadership development, critical thinking, and
+                  Pacific-specific issues. Together, we empower youth with the
+                  tools to become confident, informed change-makers.
+                </PartnerCard>
+                <PartnerCard
+                  title="Power Enclave Support Services"
+                  logo={PowerEnclaveLogo}
+                >
+                  In 2025, PACS partnered with Power Enclave Support Services
+                  for a special screening of Tinā, a film celebrating resilience
+                  and cultural identity. All ticket proceeds supported PACS
+                  programs.
+                </PartnerCard>
+                <PartnerCard
+                  title="Lupeoko Tongan Performing Arts"
+                  logo={LupeokoLogo}
+                >
+                  This partnership offers a dedicated cultural space for Tongan
+                  youth to express themselves through traditional performing
+                  arts, connect with their heritage, and develop confidence.
+                </PartnerCard>
+                <PartnerCard
+                  title="Reiby Juvenile Justice Centre"
+                  logo={ReibyLogo}
+                >
+                  We partner with Reiby to deliver mentoring and cultural
+                  programs that empower young people in custody, building
+                  resilience, positive identity, and pathways for growth. Our
+                  focus on leadership, connection, and practical life skills
+                  supports them to make positive choices and reduce reoffending.
+                </PartnerCard>
+              </div>
+            </ScrollRevealStagger>
           </div>
         </section>
 
         {/* Section 4: Call to Action */}
         <section>
           <div className="container text-center">
-            <h3 className="text-2xl font-bold text-blackColor dark:text-blackColor-dark">
-              Together, we are building a stronger, more inclusive future.
-            </h3>
-            <p className="mt-4 text-lg text-contentColor dark:text-contentColor-dark max-w-2xl mx-auto">
-              Want to partner with us and make a difference in the community?
-            </p>
-            <div className="mt-8 flex justify-center">
-              <Link href="/contact">
-                <ShimmerButton className="shadow-2xl">
-                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Contact Us
-                  </span>
-                </ShimmerButton>
-              </Link>
-            </div>
+            <ScrollReveal>
+              <h3 className="text-2xl font-bold text-blackColor dark:text-blackColor-dark">
+                Together, we are building a stronger, more inclusive future.
+              </h3>
+              <p className="mt-4 text-lg text-contentColor dark:text-contentColor-dark max-w-2xl mx-auto">
+                Want to partner with us and make a difference in the community?
+              </p>
+              <div className="mt-8 flex justify-center">
+                <Link href="/contact">
+                  <ShimmerButton className="shadow-2xl">
+                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                      Contact Us
+                    </span>
+                  </ShimmerButton>
+                </Link>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
       </main>
