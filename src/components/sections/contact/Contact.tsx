@@ -18,7 +18,8 @@ const Contact: React.FC = () => {
             </h2>
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
               Have a question or want to learn more about our programs? Fill out
-              the form below, and we'll get back to you as soon as possible.
+              the form below, and we&apos;ll get back to you as soon as
+              possible.
             </p>
           </ScrollReveal>
         </div>

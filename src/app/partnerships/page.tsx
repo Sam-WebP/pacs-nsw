@@ -85,10 +85,10 @@ const PartnershipsPage: React.FC = () => {
                     real, lasting change.
                   </p>
                   <p>
-                    Whether it's through justice reform, cultural preservation,
-                    or mentorship and leadership development, our partners help
-                    us amplify our efforts and connect with those who need
-                    support the most.
+                    Whether it&apos;s through justice reform, cultural
+                    preservation, or mentorship and leadership development, our
+                    partners help us amplify our efforts and connect with those
+                    who need support the most.
                   </p>
                 </div>
               </ScrollReveal>

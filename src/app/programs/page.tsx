@@ -131,19 +131,19 @@ const ProgramsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Section 4: The PACS Men's Group */}
+        {/* Section 4: The PACS Men&apos;s Group */}
         <section>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Text content */}
               <ScrollReveal>
-                <SectionName>MEN'S WELLBEING</SectionName>
+                <SectionName>MEN&apos;S WELLBEING</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-                  The PACS Men's Group
+                  The PACS Men&apos;s Group
                 </h2>
                 <div className="space-y-4 text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
                   <p>
-                    The <strong>PACS Men's Group</strong> is a supportive
+                    The <strong>PACS Men&apos;s Group</strong> is a supportive
                     initiative dedicated to promoting the mental health and
                     wellbeing of mature men within the Pasifika community.
                     Recognising the unique challenges men face, the program

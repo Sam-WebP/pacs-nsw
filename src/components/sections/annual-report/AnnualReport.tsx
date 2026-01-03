@@ -26,9 +26,9 @@ const AnnualReport: React.FC = () => {
               deepen its impact within the community. We strengthened
               partnerships with organisations like Cobham Youth Justice, POLEN,
               MCM, and the NRL community. Through mentoring, leadership
-              programs, and cultural events, we've continued to advocate for
-              young people, ensuring their voices are heard and valued in policy
-              discussions.
+              programs, and cultural events, we&apos;ve continued to advocate
+              for young people, ensuring their voices are heard and valued in
+              policy discussions.
             </p>
           </ScrollReveal>
         </div>
@@ -57,40 +57,40 @@ const AnnualReport: React.FC = () => {
                   one another.
                 </p>
                 <p>
-                  Over the past year, I've witnessed how powerful these
+                  Over the past year, I&apos;ve witnessed how powerful these
                   connections can be-how a single conversation, a shared story,
                   or a meaningful experience can spark change. And when these
                   connections grow, they create something even more powerful:
                   collaboration.
                 </p>
                 <p>
-                  Collaboration is how we've been able to grow our reach, deepen
-                  our impact, and continue to walk alongside our young people in
-                  ways that are real, relevant, and respectful. Whether it's
-                  through our ongoing work with partners like Cobham Youth
-                  Justice, POLEN, MCM, or the NRL community, or in the
-                  day-to-day mentoring circles, cultural camps, or community
-                  forums-we've seen that genuine connection opens doors to
+                  Collaboration is how we&apos;ve been able to grow our reach,
+                  deepen our impact, and continue to walk alongside our young
+                  people in ways that are real, relevant, and respectful.
+                  Whether it&apos;s through our ongoing work with partners like
+                  Cobham Youth Justice, POLEN, MCM, or the NRL community, or in
+                  the day-to-day mentoring circles, cultural camps, or community
+                  forums-we&apos;ve seen that genuine connection opens doors to
                   lasting change.
                 </p>
                 <p>
-                  Young people are at the centre of this work. They're not just
-                  participants; they're leaders, storytellers, and
+                  Young people are at the centre of this work. They&apos;re not
+                  just participants; they&apos;re leaders, storytellers, and
                   system-shapers. When we invest in them-through mentoring,
-                  leadership development, and cultural identity work-we're
+                  leadership development, and cultural identity work-we&apos;re
                   investing in a stronger, more united future.
                 </p>
                 <p>
                   To our partners, collaborators, parents, volunteers, and young
                   people: thank you. Thank you for trusting us, standing with
-                  us, and continuing to believe in what's possible when
+                  us, and continuing to believe in what&apos;s possible when
                   community leads.
                 </p>
                 <p>
-                  As we look to the future, we'll keep building with the same
-                  values we started with-culture, connection, and care. Because
-                  it's through these relationships that real, lasting
-                  transformation takes place.
+                  As we look to the future, we&apos;ll keep building with the
+                  same values we started with-culture, connection, and care.
+                  Because it&apos;s through these relationships that real,
+                  lasting transformation takes place.
                 </p>
               </div>
             </blockquote>

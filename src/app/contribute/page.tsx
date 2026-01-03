@@ -117,8 +117,9 @@ const GetInvolvedPage: React.FC = () => {
                   buttonLink="/contact"
                 >
                   Share your time and skills to make a hands-on difference.
-                  Whether it's mentoring a young person, helping run workshops,
-                  or assisting with events, volunteers are vital to our work.
+                  Whether it&apos;s mentoring a young person, helping run
+                  workshops, or assisting with events, volunteers are vital to
+                  our work.
                 </InvolvementCard>
                 <InvolvementCard
                   title="Partner with Us"
@@ -142,8 +143,8 @@ const GetInvolvedPage: React.FC = () => {
                 Join Us on the Journey
               </h3>
               <p className="mt-4 text-lg text-contentColor dark:text-contentColor-dark max-w-3xl mx-auto">
-                By getting involved with PACS, you're not just supporting a
-                cause-you're becoming part of a movement to break cycles of
+                By getting involved with PACS, you&apos;re not just supporting a
+                cause-you&apos;re becoming part of a movement to break cycles of
                 disadvantage, celebrate culture, and nurture future leaders.
                 Together, we can create opportunities, build resilience, and
                 support Pasifika youth in reaching their full potential.

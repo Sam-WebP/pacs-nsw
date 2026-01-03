@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/ScrollReveal";
 import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program.png";
 import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program.png";
-import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men's Group.png";
+import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group.png";
 import Link from "next/link";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
