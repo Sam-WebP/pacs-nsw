@@ -1,10 +1,12 @@
 "use client";
 
+import { TextAnimate } from "@/components/ui/text-animate";
 import HeadingLg from "@/components/shared/headings/HeadingLg";
 import ParagraphHero from "@/components/shared/paragraphs/ParagraphHero";
 import HeroName from "@/components/shared/section-names/HeroName";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { isFirefox } from "@/lib/browser";
 import heroVideo from "@/assets/videos/hero_video.mp4";
 import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.webp";
 import herobanner2 from "@/assets/images/register__2.webp";
@@ -13,6 +15,13 @@ import Link from "next/link";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
 const Hero1: React.FC = () => {
+  const [isFirefoxBrowser, setIsFirefoxBrowser] = useState(false);
+
+  useEffect(() => {
+    // Check if browser is Firefox on client side
+    setIsFirefoxBrowser(isFirefox());
+  }, []);
+
   return (
     <section data-aos="fade-up">
       {/* banner section  */}
@@ -21,9 +30,15 @@ const Hero1: React.FC = () => {
           {/* banner Left  */}
           <div data-aos="fade-up">
             <HeroName>Pacific & Australian Community Services (PACS)</HeroName>
-            <HeadingLg color="white">
+            <TextAnimate
+              as="h1"
+              className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-tight md:leading-tight lg:leading-tight 2xl:leading-tight tracking-tighter font-bold text-whiteColor mb-4"
+              animation="blurInUp"
+              by="character"
+              once
+            >
               Empowering Pasifika Futures - Through Culture, Connection & Care
-            </HeadingLg>
+            </TextAnimate>
             <ParagraphHero color="white">
               Supporting young people through mentorship, cultural identity and
               leadership development
@@ -92,16 +107,20 @@ const Hero1: React.FC = () => {
             src={herobanner2}
             alt=""
           />
-          <Image
-            className="absolute right-[5%] bottom-[15%]"
-            src={herobanner7}
-            alt=""
-          />
-          <Image
-            className="absolute top-[5%] left-[45%]"
-            src={herobanner7}
-            alt=""
-          />
+          {!isFirefoxBrowser && (
+            <>
+              <Image
+                className="absolute right-[5%] bottom-[15%]"
+                src={herobanner7}
+                alt=""
+              />
+              <Image
+                className="absolute top-[5%] left-[45%]"
+                src={herobanner7}
+                alt=""
+              />
+            </>
+          )}
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
 import React from "react";
 import SectionName from "@/components/shared/section-names/SectionName";
 import ProgramCard from "./ProgramCard";
-import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program - 1.png";
-import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program - 1.png";
-import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group - 1.png";
+import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program.png";
+import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program.png";
+import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men's Group.png";
 import Link from "next/link";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 
@@ -34,7 +34,7 @@ const Programs: React.FC = () => {
           <ProgramCard
             image={PACSMenGroupImage}
             title="PACS Men's Group"
-            description="This initiative supports the mental health of mature men, offering a culturally sensitive space to break stigmas and promote emotional well-being through shared stories and healing conversations."
+            description="This initiative supports the mental health of mature men, offering a culturally sensitive space to break stigmas and promote emotional well-being through shared stories and healing conversations. Grounded in Pasifika values, the group encourages open dialogue, mutual support, and resilience in a safe and respectful environment."
           />
         </div>
       </div>

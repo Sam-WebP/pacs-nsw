@@ -9,7 +9,7 @@ import PolenLogo from "@/assets/images/New Photos/POLEN - 1.png";
 import MCMLogo from "@/assets/images/New Photos/MCM - 1.png";
 import PowerEnclaveLogo from "@/assets/images/New Photos/Power Enclave.png";
 import LupeokoLogo from "@/assets/images/New Photos/Lupeoko Tongan Arts - 1.png";
-import ReibyLogo from "@/assets/images/Community Partners Logos/reiby.jpeg";
+import ReibyLogo from "@/assets/images/New Photos/Reiby Juvenile Justice Centre.png";
 import ShimmerButton from "@/components/shared/buttons/ShimmerButton";
 import { cn } from "@/lib/utils";
 

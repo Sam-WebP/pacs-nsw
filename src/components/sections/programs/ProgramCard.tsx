@@ -26,8 +26,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
     <div className="mb-10 overflow-hidden rounded-lg bg-gray-50 p-6 shadow-sm flex flex-col h-full">
       {" "}
       {/* Added border style */}
-      <div className="relative h-[240px] w-full">
-        <Image src={image} alt={title} fill className="object-cover" />
+      <div className="relative h-[240px] w-full overflow-hidden rounded-standard">
+        <Image src={image} alt={title} fill className="object-contain" />
       </div>
       <div className="p-8 sm:p-9 md:p-7 xl:p-9 flex flex-col justify-between flex-grow">
         <div>
