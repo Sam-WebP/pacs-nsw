@@ -5,6 +5,11 @@ import SectionName from "@/components/shared/section-names/SectionName";
 import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program - 1.png";
 import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program - 1.png";
 import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group - 1.png";
+import {
+  ScrollReveal,
+  ScrollRevealRight,
+  ScrollRevealLeft,
+} from "@/components/ui/ScrollReveal";
 
 const ProgramsPage: React.FC = () => {
   return (
@@ -13,13 +18,15 @@ const ProgramsPage: React.FC = () => {
         {/* Section 1: Page Header */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-blackColor dark:text-blackColor-dark">
-              Our Programs
-            </h1>
-            <p className="mt-4 text-lg text-contentColor dark:text-contentColor-dark max-w-2xl mx-auto">
-              Individual Focused & Community Supported: Creating safe spaces for
-              people to grow, connect and succeed.
-            </p>
+            <ScrollReveal>
+              <h1 className="text-4xl md:text-5xl font-bold text-blackColor dark:text-blackColor-dark">
+                Our Programs
+              </h1>
+              <p className="mt-4 text-lg text-contentColor dark:text-contentColor-dark max-w-2xl mx-auto">
+                Individual Focused & Community Supported: Creating safe spaces
+                for people to grow, connect and succeed.
+              </p>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -28,7 +35,7 @@ const ProgramsPage: React.FC = () => {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Text content */}
-              <div data-aos="fade-up">
+              <ScrollReveal>
                 <SectionName>YOUTH & MENTORSHIP</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
                   Youth Outreach Engagement & Steps to Success Program
@@ -62,16 +69,16 @@ const ProgramsPage: React.FC = () => {
                     contribute meaningfully to their communities.
                   </p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right side: Image */}
-              <div data-aos="fade-up" className="flex justify-center">
+              <ScrollReveal delay={0.2} className="flex justify-center">
                 <Image
                   src={YouthOutreachImage}
                   alt="Youth mentorship session"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[500px]"
                 />
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -81,19 +88,16 @@ const ProgramsPage: React.FC = () => {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Image */}
-              <div
-                data-aos="fade-up"
-                className="flex justify-center order-1 lg:order-1"
-              >
+              <ScrollReveal className="flex justify-center order-1 lg:order-1">
                 <Image
                   src={PasifikaLeadershipImage}
                   alt="Leadership and personal development"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[500px]"
                 />
-              </div>
+              </ScrollReveal>
 
               {/* Right side: Text content */}
-              <div data-aos="fade-up" className="order-2 lg:order-2">
+              <ScrollReveal className="order-2 lg:order-2">
                 <SectionName>LEADERSHIP & REINTEGRATION</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
                   Pasifika Leadership Pathways Program
@@ -122,7 +126,7 @@ const ProgramsPage: React.FC = () => {
                     reintegration into society.
                   </p>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -132,14 +136,14 @@ const ProgramsPage: React.FC = () => {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Text content */}
-              <div data-aos="fade-up">
-                <SectionName>MEN&apos;S WELLBEING</SectionName>
+              <ScrollReveal>
+                <SectionName>MEN'S WELLBEING</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-                  The PACS Men&apos;s Group
+                  The PACS Men's Group
                 </h2>
                 <div className="space-y-4 text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
                   <p>
-                    The <strong>PACS Men’s Group</strong> is a supportive
+                    The <strong>PACS Men's Group</strong> is a supportive
                     initiative dedicated to promoting the mental health and
                     wellbeing of mature men within the Pasifika community.
                     Recognising the unique challenges men face, the program
@@ -160,16 +164,16 @@ const ProgramsPage: React.FC = () => {
                     mature men to grow, heal, and thrive together.
                   </p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right side: Image */}
-              <div data-aos="fade-up" className="flex justify-center">
+              <ScrollReveal delay={0.2} className="flex justify-center">
                 <Image
                   src={PACSMenGroupImage}
                   alt="A supportive group discussion"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[500px]"
                 />
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>

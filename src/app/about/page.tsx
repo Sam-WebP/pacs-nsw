@@ -5,6 +5,10 @@ import SectionName from "@/components/shared/section-names/SectionName";
 import CommunityDrivenImage1 from "@/assets/images/New Photos/A Community-Driven Organisation - 1.png";
 import CommunityDrivenImage2 from "@/assets/images/New Photos/A Community-Driven Organisation - 2.png";
 import { cn } from "@/lib/utils";
+import {
+  ScrollReveal,
+  ScrollRevealStagger,
+} from "@/components/ui/ScrollReveal";
 
 // A simple card component for this page, styled like others in the project.
 const InfoCard: React.FC<{
@@ -34,9 +38,11 @@ const AboutPage: React.FC = () => {
         {/* Section 1: Page Header */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-blackColor dark:text-blackColor-dark mt-4">
-              About Pacific & Australian Community Services
-            </h1>
+            <ScrollReveal>
+              <h1 className="text-4xl md:text-5xl font-bold text-blackColor dark:text-blackColor-dark mt-4">
+                About Pacific & Australian Community Services
+              </h1>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -45,7 +51,7 @@ const AboutPage: React.FC = () => {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Text content */}
-              <div data-aos="fade-up">
+              <ScrollReveal>
                 <SectionName>WHO WE ARE</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
                   A{" "}
@@ -68,16 +74,16 @@ const AboutPage: React.FC = () => {
                   Pacific Islander and multicultural backgrounds to become
                   leaders, storytellers, and agents of change.
                 </p>
-              </div>
+              </ScrollReveal>
 
               {/* Right side: Image */}
-              <div data-aos="fade-up" className="flex justify-center">
+              <ScrollReveal delay={0.2} className="flex justify-center">
                 <Image
                   src={CommunityDrivenImage1}
                   alt="PACS Community Engagement"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -87,19 +93,16 @@ const AboutPage: React.FC = () => {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
               {/* Left side: Image */}
-              <div
-                data-aos="fade-up"
-                className="flex justify-center order-1 lg:order-1"
-              >
+              <ScrollReveal className="flex justify-center order-1 lg:order-1">
                 <Image
                   src={CommunityDrivenImage2}
                   alt="Our Vision for the Future"
                   className="rounded-lg shadow-lg object-cover w-full h-auto max-h-[450px]"
                 />
-              </div>
+              </ScrollReveal>
 
               {/* Right side: Text content */}
-              <div data-aos="fade-up" className="space-y-10 order-2 lg:order-2">
+              <ScrollReveal className="space-y-10 order-2 lg:order-2">
                 <div>
                   <h3 className="text-2xl font-bold text-blackColor dark:text-blackColor-dark pb-4">
                     Our Vision
@@ -122,7 +125,7 @@ const AboutPage: React.FC = () => {
                     service model.
                   </p>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -130,15 +133,17 @@ const AboutPage: React.FC = () => {
         {/* Section 4: Key Initiatives */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container">
-            <div className="max-w-[800px]">
-              <SectionName>WHAT WE DO</SectionName>
-              <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-                Our Key{" "}
-                <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-                  Initiatives
-                </span>
-              </h2>
-            </div>
+            <ScrollReveal>
+              <div className="max-w-[800px]">
+                <SectionName>WHAT WE DO</SectionName>
+                <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
+                  Our Key{" "}
+                  <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
+                    Initiatives
+                  </span>
+                </h2>
+              </div>
+            </ScrollReveal>
             <div className="max-w-[800px]">
               <ul className="space-y-5 mt-4">
                 <li className="flex items-center group">
@@ -172,70 +177,76 @@ const AboutPage: React.FC = () => {
         {/* Section 5: Our Values */}
         <section>
           <div className="container">
-            <div className="max-w-[800px]">
-              <SectionName>OUR VALUES</SectionName>
-              <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-                The Principles That{" "}
-                <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-                  Guide Us
-                </span>
-              </h2>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3 mt-8">
-              <InfoCard title="Service">
-                We are driven by a deep commitment to serving and uplifting our
-                community.
-              </InfoCard>
-              <InfoCard title="Trust">
-                We cultivate trust through collaboration, transparency, and
-                respect.
-              </InfoCard>
-              <InfoCard title="Equity">
-                We ensure all young people, regardless of background, have
-                access to the support and opportunities they deserve.
-              </InfoCard>
-            </div>
+            <ScrollReveal>
+              <div className="max-w-[800px]">
+                <SectionName>OUR VALUES</SectionName>
+                <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
+                  The Principles That{" "}
+                  <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
+                    Guide Us
+                  </span>
+                </h2>
+              </div>
+            </ScrollReveal>
+            <ScrollRevealStagger staggerChildren={0.15} delayChildren={0.1}>
+              <div className="grid gap-8 md:grid-cols-3 mt-8">
+                <InfoCard title="Service">
+                  We are driven by a deep commitment to serving and uplifting
+                  our community.
+                </InfoCard>
+                <InfoCard title="Trust">
+                  We cultivate trust through collaboration, transparency, and
+                  respect.
+                </InfoCard>
+                <InfoCard title="Equity">
+                  We ensure all young people, regardless of background, have
+                  access to the support and opportunities they deserve.
+                </InfoCard>
+              </div>
+            </ScrollRevealStagger>
           </div>
         </section>
 
         {/* Section 6: Our Approach to Wellbeing & Community Safety */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container">
-            <div className="max-w-[800px]">
-              <SectionName>OUR APPROACH</SectionName>
-              <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-                Our Approach to{" "}
-                <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-                  Wellbeing
-                </span>
-                ‎ &{" "}
-                <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
-                  Community Safety
-                </span>
-              </h2>
-              <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-4">
-                At PACS, we recognise that many individuals and families face
-                interconnected challenges including mental health concerns,
-                alcohol and other drug use, and domestic and family violence.
-                These issues rarely exist in isolation and are often shaped by
-                trauma, social circumstances and cultural disconnection. Through
-                a holistic, wrap-around approach, we work alongside trusted
-                partners to provide culturally responsive, trauma-informed
-                support that promotes early intervention, healing and long-term
-                wellbeing.
-              </p>
-              <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
-                Through mentoring and leadership programs, we support young
-                people and families to build confidence, life skills and healthy
-                coping strategies, helping to reduce isolation, harmful
-                behaviours and cycles of abuse or dependency. By connecting
-                individuals with specialist mental health, alcohol and drug,
-                counselling and domestic violence services, PACS aims to
-                strengthen not only individual outcomes, but the safety,
-                resilience and cultural wellbeing of the broader Pasifika
-                community.
-              </p>
-            </div>
+            <ScrollReveal>
+              <div className="max-w-[800px]">
+                <SectionName>OUR APPROACH</SectionName>
+                <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
+                  Our Approach to{" "}
+                  <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
+                    Wellbeing
+                  </span>
+                  ‎ &{" "}
+                  <span className="relative z-0 after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:-z-1">
+                    Community Safety
+                  </span>
+                </h2>
+                <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-4">
+                  At PACS, we recognise that many individuals and families face
+                  interconnected challenges including mental health concerns,
+                  alcohol and other drug use, and domestic and family violence.
+                  These issues rarely exist in isolation and are often shaped by
+                  trauma, social circumstances and cultural disconnection.
+                  Through a holistic, wrap-around approach, we work alongside
+                  trusted partners to provide culturally responsive,
+                  trauma-informed support that promotes early intervention,
+                  healing and long-term wellbeing.
+                </p>
+                <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
+                  Through mentoring and leadership programs, we support young
+                  people and families to build confidence, life skills and
+                  healthy coping strategies, helping to reduce isolation,
+                  harmful behaviours and cycles of abuse or dependency. By
+                  connecting individuals with specialist mental health, alcohol
+                  and drug, counselling and domestic violence services, PACS
+                  aims to strengthen not only individual outcomes, but the
+                  safety, resilience and cultural wellbeing of the broader
+                  Pasifika community.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
       </main>

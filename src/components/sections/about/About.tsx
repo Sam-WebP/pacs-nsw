@@ -7,6 +7,11 @@ import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/Marquee";
 import SectionName from "@/components/shared/section-names/SectionName";
 import AboutListItem from "@/components/shared/abouts/AboutListItem";
+import {
+  ScrollReveal,
+  ScrollRevealLeft,
+  ScrollRevealStagger,
+} from "@/components/ui/ScrollReveal";
 import marquee1 from "@/assets/images/marquee_1.webp";
 import marquee2 from "@/assets/images/marquee_2.webp";
 import marquee3 from "@/assets/images/marquee_3.webp";
@@ -105,9 +110,9 @@ const About: React.FC = () => {
         {/* about section  */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px">
           {/* about right */}
-          <div
-            data-aos="fade-up"
+          <ScrollReveal
             className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px md:-pb-0"
+            delay={0.1}
           >
             <SectionName>Welcome to PACS</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
@@ -151,9 +156,9 @@ const About: React.FC = () => {
                 </ShimmerButton>
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
           {/* about left */}
-          <div data-aos="fade-up" className="order-2 lg:order-1">
+          <ScrollReveal className="order-2 lg:order-1" delay={0.2}>
             <div className="relative flex h-[300px] lg:h-[700px] w-full flex-row items-center justify-center overflow-hidden rounded-lg">
               <Marquee pauseOnHover vertical className="[--duration:60s]">
                 {firstRow.map((pic, index) => (
@@ -173,7 +178,7 @@ const About: React.FC = () => {
               <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white dark:from-background"></div>
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white dark:from-background"></div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
