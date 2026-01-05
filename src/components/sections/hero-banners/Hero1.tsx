@@ -7,7 +7,7 @@ import HeroName from "@/components/shared/section-names/HeroName";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { isFirefox } from "@/lib/browser";
-import heroVideo from "@/assets/videos/hero_video.mp4";
+import heroVideo from "@/assets/videos/updated_hero_video.mp4";
 import heroVideoThumbnail from "@/assets/images/thumbnail_hero_video.webp";
 import herobanner2 from "@/assets/images/register__2.webp";
 import herobanner7 from "@/assets/images/herobanner__7.webp";
