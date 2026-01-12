@@ -155,7 +155,7 @@ const AboutPage: React.FC = () => {
                 <li className="flex items-center group">
                   <i className="icofont-check text-primaryColor mr-15px border border-primaryColor rounded-full"></i>
                   <p className="text-sm md:text-base text-blackColor dark:text-blackColor-dark">
-                    Pasifika Leadership Pathways Program
+                    PACS Leadership Pathways Program
                   </p>
                 </li>
                 <li className="flex items-center group">
