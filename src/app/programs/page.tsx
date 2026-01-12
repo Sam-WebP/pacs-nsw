@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import SectionName from "@/components/shared/section-names/SectionName";
-import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program - 1.png";
-import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program - 1.png";
-import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group - 1.png";
+import YouthOutreachImage from "@/assets/images/New Photos/Youth Outreach Engagement & Steps to Success Program.png";
+import PasifikaLeadershipImage from "@/assets/images/New Photos/Pasifika Leadership Pathways Program.png";
+import PACSMenGroupImage from "@/assets/images/New Photos/PACS Men_s Group.png";
 import {
   ScrollReveal,
   ScrollRevealRight,
@@ -83,7 +83,7 @@ const ProgramsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Section 3: Pasifika Leadership Pathways Program */}
+        {/* Section 3: PACS Leadership Pathways Program */}
         <section className="bg-gray-50 dark:bg-darkdeep1 py-12 md:py-20">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-30px gap-y-8 items-center">
@@ -100,12 +100,12 @@ const ProgramsPage: React.FC = () => {
               <ScrollReveal className="order-2 lg:order-2">
                 <SectionName>LEADERSHIP & REINTEGRATION</SectionName>
                 <h2 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
-                  Pasifika Leadership Pathways Program
+                  PACS Leadership Pathways Program
                 </h2>
                 <div className="space-y-4 text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
                   <p>
-                    The <strong>Pasifika Leadership Pathways Program</strong> is
-                    a culturally grounded initiative designed to reduce
+                    The <strong>PACS Leadership Pathways Program</strong> is a
+                    culturally grounded initiative designed to reduce
                     reoffending and support long-term behavioural change among
                     Pasifika youth. Rooted in core Pasifika values, the program
                     delivers leadership and personal development sessions in

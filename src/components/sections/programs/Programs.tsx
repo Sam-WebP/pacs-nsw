@@ -35,7 +35,7 @@ const Programs: React.FC = () => {
             />
             <ProgramCard
               image={PasifikaLeadershipImage}
-              title="Pasifika Leadership Pathways Program"
+              title="PACS Leadership Pathways Program"
               description="In partnership with correctional facilities, this program addresses reoffending and promotes reintegration through culturally rich leadership training. Youth reconnect with their identity, learn goal-setting, and build resilience in a safe, supportive environment."
             />
             <ProgramCard
