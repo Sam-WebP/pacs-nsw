@@ -32,12 +32,13 @@ const Hero1: React.FC = () => {
             <HeroName>Pacific & Australian Community Services (PACS)</HeroName>
             <TextAnimate
               as="h1"
-              className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-tight md:leading-tight lg:leading-tight 2xl:leading-tight tracking-tighter font-bold text-whiteColor mb-4"
+              className="text-4xl md:text-5xl 2xl:text-6xl leading-tight md:leading-tight lg:leading-tight 2xl:leading-tight tracking-tighter font-bold text-whiteColor mb-4 text-balance"
               animation="blurInUp"
               by="character"
               once
             >
-              Empowering Pasifika Futures - Through Culture, Connection & Care
+              Empowering The Rising Generation - Through Culture, Connection &
+              Care
             </TextAnimate>
             <ParagraphHero color="white">
               Supporting young people through mentorship, cultural identity and
