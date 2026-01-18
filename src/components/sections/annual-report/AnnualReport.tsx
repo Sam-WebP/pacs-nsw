@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SectionName from "@/components/shared/section-names/SectionName";
-import BrucePhoto from "@/assets/images/New Photos/Photo of Bruce - to go with his founder message.png";
+import BrucePhoto from "@/assets/images/New Photos/Photo of Bruce - to go with his founder message.jpg";
 import {
   ScrollReveal,
   ScrollRevealLeft,
