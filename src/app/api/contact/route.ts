@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "PACS Website <onboarding@resend.dev>",
+      from: "PACS Website <noreply@mail.pacsnsw.com.au>",
       to: [toEmail],
       subject: `New Message from ${firstname} ${lastname}`,
       replyTo: email,
