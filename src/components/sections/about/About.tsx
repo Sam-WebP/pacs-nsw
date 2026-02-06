@@ -45,6 +45,10 @@ interface AboutItem {
   title: string;
 }
 
+interface AboutProps {
+  immediate?: boolean;
+}
+
 const ImageCard = ({ img }: { img: StaticImageData }) => {
   return (
     <figure
@@ -57,7 +61,7 @@ const ImageCard = ({ img }: { img: StaticImageData }) => {
   );
 };
 
-const About: React.FC = () => {
+const About: React.FC<AboutProps> = ({ immediate }) => {
   const marqueeImages = [
     { img: marquee1 },
     { img: marquee2 },
@@ -113,6 +117,7 @@ const About: React.FC = () => {
           <ScrollReveal
             className="pl-0 lg:pl-35px order-1 lg:order-2 pb-25px md:-pb-0"
             delay={0.1}
+            immediate={immediate}
           >
             <SectionName>Welcome to PACS</SectionName>
             <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
@@ -158,7 +163,11 @@ const About: React.FC = () => {
             </div>
           </ScrollReveal>
           {/* about left */}
-          <ScrollReveal className="order-2 lg:order-1" delay={0.2}>
+          <ScrollReveal
+            className="order-2 lg:order-1"
+            delay={0.2}
+            immediate={immediate}
+          >
             <div className="relative flex h-[300px] lg:h-[700px] w-full flex-row items-center justify-center overflow-hidden rounded-lg">
               <Marquee pauseOnHover vertical className="[--duration:60s]">
                 {firstRow.map((pic, index) => (

@@ -16,15 +16,14 @@ import React from "react";
 const Homepage: React.FC = () => {
   return (
     <main className="flex flex-col">
-      <div className="py-16 bg-bodyBg">
+      <div className="py-5 bg-bodyBg">
         <ScrollReveal>
           <Hero1 />
         </ScrollReveal>
       </div>
-      <div className="py-16 bg-bodyBg">
-        <ScrollReveal>
-          <About />
-        </ScrollReveal>
+      <div className="py-6 md:py-16 bg-bodyBg">
+        {/* Pass immediate=true directly to About so its inner content loads immediately */}
+        <About immediate={true} />
       </div>
       <div className="py-16 bg-white">
         <ScrollReveal>

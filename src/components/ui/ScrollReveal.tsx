@@ -9,6 +9,7 @@ interface ScrollRevealProps {
   delay?: number;
   duration?: number;
   viewport?: "once" | "always" | number;
+  immediate?: boolean;
 }
 
 const defaultVariants = {
@@ -29,14 +30,19 @@ export function ScrollReveal({
   delay = 0,
   duration = 0.6,
   viewport = "once",
+  immediate = false,
   ...props
 }: ScrollRevealProps) {
   return (
     <motion.div
       className={className}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: viewport === "once", margin: "-50px" }}
+      // If immediate is true, animate immediately. Otherwise, wait for view.
+      animate={immediate ? "visible" : undefined}
+      whileInView={!immediate ? "visible" : undefined}
+      viewport={
+        !immediate ? { once: viewport === "once", margin: "-50px" } : undefined
+      }
       variants={{
         hidden: { opacity: 0, y: 60 },
         visible: {
